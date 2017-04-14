@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LCMainViewController">
+            <connections>
+                <outlet property="ibCollecationView" destination="2LG-dG-OiJ" id="jBB-lp-aj5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2LG-dG-OiJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
+                    <color key="backgroundColor" red="0.18823529410000001" green="0.54901960780000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GCN-N9-H7g">
+                        <size key="itemSize" width="100" height="100"/>
+                        <size key="headerReferenceSize" width="10" height="10"/>
+                        <size key="footerReferenceSize" width="10" height="10"/>
+                        <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="RAn-o3-Rhg"/>
+                        <outlet property="delegate" destination="-1" id="Dj3-aa-3Jy"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGx-aL-l39">
+                    <rect key="frame" x="0.0" y="620" width="186.5" height="47"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.85183953899999998" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="WGw-Jv-w2W"/>
+                    </constraints>
+                    <state key="normal" title="First Type moji">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="DidTapFirstTypeImages:" destination="-1" eventType="touchUpInside" id="yin-Me-wVv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6d-P8-7HU">
+                    <rect key="frame" x="188.5" y="620" width="186.5" height="47"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.85183953899999998" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="sg7-fD-Bos"/>
+                    </constraints>
+                    <state key="normal" title="second Type of Moji">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="DidTapOnSecondTypeOfImages:" destination="-1" eventType="touchUpInside" id="KCf-lT-tt5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.18823529410000001" green="0.54901960780000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="2LG-dG-OiJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="15l-MD-ruj"/>
+                <constraint firstItem="LGx-aL-l39" firstAttribute="top" secondItem="2LG-dG-OiJ" secondAttribute="bottom" id="5XR-XK-BM5"/>
+                <constraint firstAttribute="bottom" secondItem="LGx-aL-l39" secondAttribute="bottom" id="J9l-3i-8oK"/>
+                <constraint firstItem="X6d-P8-7HU" firstAttribute="leading" secondItem="LGx-aL-l39" secondAttribute="trailing" constant="2" id="Ppl-4o-7lz"/>
+                <constraint firstItem="LGx-aL-l39" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bKE-SN-z3g"/>
+                <constraint firstAttribute="bottom" secondItem="X6d-P8-7HU" secondAttribute="bottom" id="gDh-Te-lyD"/>
+                <constraint firstAttribute="trailing" secondItem="X6d-P8-7HU" secondAttribute="trailing" id="nmN-0k-F6j"/>
+                <constraint firstAttribute="trailing" secondItem="2LG-dG-OiJ" secondAttribute="trailing" id="rIq-Im-4fC"/>
+                <constraint firstItem="2LG-dG-OiJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rzN-Hw-Mzg"/>
+                <constraint firstItem="LGx-aL-l39" firstAttribute="width" secondItem="X6d-P8-7HU" secondAttribute="width" id="sNg-d8-Kh9"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="126.5"/>
+        </view>
+    </objects>
+</document>
