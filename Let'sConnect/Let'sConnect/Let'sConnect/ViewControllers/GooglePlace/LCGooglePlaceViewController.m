@@ -7,7 +7,7 @@
 //
 
 #import "LCGooglePlaceViewController.h"
-@import GoogleMaps;
+//@import GoogleMaps;
 
 @interface LCGooglePlaceViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
@@ -17,18 +17,18 @@
 @implementation LCGooglePlaceViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:1.285
-                                                            longitude:103.848
-                                                                 zoom:12];
-    
-    GMSMapView *mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
-    
-    CLLocationCoordinate2D position = CLLocationCoordinate2DMake(51.5, -0.127);
-    self.view = mapView;
-    GMSMarker *london = [GMSMarker markerWithPosition:position];
-    london.title = @"London";
-    london.icon = [UIImage imageNamed:@"poker_3.jpg"];
-    london.map = mapView;
+//    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:1.285
+//                                                            longitude:103.848
+//                                                                 zoom:12];
+//    
+//    GMSMapView *mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
+//    
+//    CLLocationCoordinate2D position = CLLocationCoordinate2DMake(51.5, -0.127);
+//    self.view = mapView;
+//    GMSMarker *london = [GMSMarker markerWithPosition:position];
+//    london.title = @"London";
+//    london.icon = [UIImage imageNamed:@"poker_3.jpg"];
+//    london.map = mapView;
 }
 
 - (void)didReceiveMemoryWarning {

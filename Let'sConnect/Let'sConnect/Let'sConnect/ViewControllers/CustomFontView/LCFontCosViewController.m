@@ -33,6 +33,13 @@
     self.ibCollecationView.dataSource = self;
     [self.ibCollecationView registerNib:[UINib nibWithNibName:@"LCCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"Cell"];
     self.ibCollecationView.backgroundColor = [UIColor clearColor];
+    
+    
+ 
+        _sceneView.scene = [SCNScene sceneNamed:@"Spaceship.dae"];
+        _sceneView.allowsCameraControl = YES;
+        _sceneView.autoenablesDefaultLighting = YES;
+    
 
 //    fontArray = [[NSMutableArray alloc]init];
 //    for (NSString* family in [UIFont familyNames]){

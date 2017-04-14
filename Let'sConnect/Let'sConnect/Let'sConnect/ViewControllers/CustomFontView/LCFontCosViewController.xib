@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="ibCollecationView" destination="Uw6-ZN-KtR" id="3q7-Xp-4SE"/>
                 <outlet property="imageView" destination="R64-Jl-LHu" id="TNJ-og-aGd"/>
+                <outlet property="sceneView" destination="zig-L2-OVO" id="s7c-L0-6Z9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="dne-j1-RxU"/>
             </connections>
         </placeholder>
@@ -23,14 +24,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R64-Jl-LHu">
-                    <rect key="frame" x="100" y="60" width="174" height="174"/>
+                    <rect key="frame" x="100.5" y="60" width="174" height="174"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="R64-Jl-LHu" secondAttribute="height" multiplier="1:1" id="oaV-JQ-PGf"/>
                         <constraint firstAttribute="height" constant="174" id="qSc-ZE-GU6"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V37-7G-NPL">
-                    <rect key="frame" x="92" y="261" width="191" height="28"/>
+                    <rect key="frame" x="92.5" y="261" width="191" height="28"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="191" id="EoU-Pu-9eb"/>
                         <constraint firstAttribute="height" constant="28" id="qj6-M2-vVB"/>
@@ -73,7 +74,7 @@
                             <state key="normal" title="&lt;"/>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bU1-1G-xf3">
-                            <rect key="frame" x="187.5" y="3" width="0.0" height="39"/>
+                            <rect key="frame" x="188" y="3" width="0.0" height="39"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="27"/>
                             <color key="textColor" red="0.1763561015" green="1" blue="0.3880812938" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -106,11 +107,16 @@
                         <constraint firstAttribute="trailing" secondItem="ImN-Ev-Xua" secondAttribute="trailing" constant="8" id="rYg-Xj-5bi"/>
                     </constraints>
                 </view>
+                <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" playing="YES" sceneName="Spaceship.dae" translatesAutoresizingMaskIntoConstraints="NO" id="zig-L2-OVO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </sceneKitView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="6SU-Kq-OCf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4sJ-GS-ilN"/>
                 <constraint firstAttribute="trailing" secondItem="eNf-5N-I87" secondAttribute="trailing" id="7m4-U0-UwN"/>
+                <constraint firstItem="zig-L2-OVO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="A8d-kP-ly4"/>
+                <constraint firstAttribute="trailing" secondItem="zig-L2-OVO" secondAttribute="trailing" id="Li9-G0-xbb"/>
                 <constraint firstAttribute="trailing" secondItem="6SU-Kq-OCf" secondAttribute="trailing" id="MYH-T4-ViV"/>
                 <constraint firstAttribute="bottom" secondItem="Uw6-ZN-KtR" secondAttribute="bottom" id="Mgh-kP-8Kw"/>
                 <constraint firstAttribute="trailing" secondItem="Uw6-ZN-KtR" secondAttribute="trailing" id="RmC-Mw-FeY"/>
@@ -118,8 +124,10 @@
                 <constraint firstItem="Uw6-ZN-KtR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UoH-T6-RuA"/>
                 <constraint firstItem="eNf-5N-I87" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wqz-dm-0bX"/>
                 <constraint firstItem="Uw6-ZN-KtR" firstAttribute="top" secondItem="6SU-Kq-OCf" secondAttribute="bottom" id="ezm-Qa-OE1"/>
+                <constraint firstAttribute="bottom" secondItem="zig-L2-OVO" secondAttribute="bottom" id="fO7-3y-KMU"/>
                 <constraint firstItem="V37-7G-NPL" firstAttribute="top" secondItem="R64-Jl-LHu" secondAttribute="bottom" constant="27" id="geg-MG-K8m"/>
                 <constraint firstItem="R64-Jl-LHu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ghX-Rb-WAN"/>
+                <constraint firstItem="zig-L2-OVO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iTv-zx-WNA"/>
                 <constraint firstItem="V37-7G-NPL" firstAttribute="centerX" secondItem="R64-Jl-LHu" secondAttribute="centerX" id="j0Z-sD-Ogo"/>
                 <constraint firstItem="6SU-Kq-OCf" firstAttribute="top" secondItem="eNf-5N-I87" secondAttribute="bottom" id="z0s-6g-MND"/>
             </constraints>

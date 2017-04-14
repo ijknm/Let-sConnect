@@ -20,6 +20,13 @@
 		AC023B9D1E9EBCBB00E63886 /* Koala_Help.png in Resources */ = {isa = PBXBuildFile; fileRef = AC023B961E9EBCBB00E63886 /* Koala_Help.png */; };
 		AC023BA21E9EBD8C00E63886 /* LCAvatarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC023BA01E9EBD8C00E63886 /* LCAvatarViewController.m */; };
 		AC023BA31E9EBD8C00E63886 /* LCAvatarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC023BA11E9EBD8C00E63886 /* LCAvatarViewController.xib */; };
+		AC0C143B1EA193840001CAEE /* lux-skin07-magma-tx-cm.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0C14391EA193840001CAEE /* lux-skin07-magma-tx-cm.png */; };
+		AC0C14421EA193A80001CAEE /* diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0C143C1EA193A80001CAEE /* diffuse.png */; };
+		AC0C14431EA193A80001CAEE /* emission.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0C143D1EA193A80001CAEE /* emission.png */; };
+		AC0C14441EA193A80001CAEE /* multiply.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0C143E1EA193A80001CAEE /* multiply.png */; };
+		AC0C14451EA193A80001CAEE /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0C143F1EA193A80001CAEE /* normal.png */; };
+		AC0C14461EA193A80001CAEE /* Spaceship.dae in Resources */ = {isa = PBXBuildFile; fileRef = AC0C14401EA193A80001CAEE /* Spaceship.dae */; };
+		AC0C14471EA193A80001CAEE /* specular.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0C14411EA193A80001CAEE /* specular.png */; };
 		AC871BBF1E9FC99200BC7ED5 /* Cat_Angry.png in Resources */ = {isa = PBXBuildFile; fileRef = AC871BAD1E9FC99200BC7ED5 /* Cat_Angry.png */; };
 		AC871BC01E9FC99200BC7ED5 /* Cat_DoNotDisturb.png in Resources */ = {isa = PBXBuildFile; fileRef = AC871BAE1E9FC99200BC7ED5 /* Cat_DoNotDisturb.png */; };
 		AC871BC11E9FC99200BC7ED5 /* Cat_Flowers.png in Resources */ = {isa = PBXBuildFile; fileRef = AC871BAF1E9FC99200BC7ED5 /* Cat_Flowers.png */; };
@@ -114,50 +121,9 @@
 		AC871C751E9FFEC300BC7ED5 /* poker_12139.png in Resources */ = {isa = PBXBuildFile; fileRef = AC871C6A1E9FFEC300BC7ED5 /* poker_12139.png */; };
 		AC871C761E9FFEC300BC7ED5 /* poker_12363.png in Resources */ = {isa = PBXBuildFile; fileRef = AC871C6B1E9FFEC300BC7ED5 /* poker_12363.png */; };
 		AC871C771E9FFEC300BC7ED5 /* poker_56985.png in Resources */ = {isa = PBXBuildFile; fileRef = AC871C6C1E9FFEC300BC7ED5 /* poker_56985.png */; };
-		AC871CA51EA00B3300BC7ED5 /* AppleStormCBo.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C791EA00B3300BC7ED5 /* AppleStormCBo.otf */; };
-		AC871CA61EA00B3300BC7ED5 /* AppleStormCBoIta.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C7A1EA00B3300BC7ED5 /* AppleStormCBoIta.otf */; };
-		AC871CA71EA00B3300BC7ED5 /* AppleStormIta.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C7B1EA00B3300BC7ED5 /* AppleStormIta.otf */; };
-		AC871CA81EA00B3300BC7ED5 /* AppleStormRg.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C7C1EA00B3300BC7ED5 /* AppleStormRg.otf */; };
-		AC871CA91EA00B3300BC7ED5 /* AppleStormShdRg.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C7D1EA00B3300BC7ED5 /* AppleStormShdRg.otf */; };
-		AC871CAA1EA00B3300BC7ED5 /* AppleStormShdRgIta.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C7E1EA00B3300BC7ED5 /* AppleStormShdRgIta.otf */; };
-		AC871CAB1EA00B3300BC7ED5 /* AppleStormShdXbd.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C7F1EA00B3300BC7ED5 /* AppleStormShdXbd.otf */; };
-		AC871CAC1EA00B3300BC7ED5 /* AppleStormShdXbdIta.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C801EA00B3300BC7ED5 /* AppleStormShdXbdIta.otf */; };
-		AC871CAD1EA00B3300BC7ED5 /* AppleStormXbd.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C811EA00B3300BC7ED5 /* AppleStormXbd.otf */; };
-		AC871CAE1EA00B3300BC7ED5 /* AppleStormXbdFax.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C821EA00B3300BC7ED5 /* AppleStormXbdFax.otf */; };
-		AC871CAF1EA00B3300BC7ED5 /* AppleStormXbdFaxIta.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C831EA00B3300BC7ED5 /* AppleStormXbdFaxIta.otf */; };
-		AC871CB01EA00B3300BC7ED5 /* AppleStormXbdIta.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C841EA00B3300BC7ED5 /* AppleStormXbdIta.otf */; };
-		AC871CB11EA00B3300BC7ED5 /* AppleStormXbdOut.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C851EA00B3300BC7ED5 /* AppleStormXbdOut.otf */; };
-		AC871CB21EA00B3300BC7ED5 /* AppleStormXbdOutIta.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C861EA00B3300BC7ED5 /* AppleStormXbdOutIta.otf */; };
-		AC871CB31EA00B3300BC7ED5 /* BroshK.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C871EA00B3300BC7ED5 /* BroshK.otf */; };
-		AC871CB41EA00B3300BC7ED5 /* BroshK.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C881EA00B3300BC7ED5 /* BroshK.ttf */; };
-		AC871CB51EA00B3300BC7ED5 /* Garineldo.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C891EA00B3300BC7ED5 /* Garineldo.otf */; };
-		AC871CB61EA00B3300BC7ED5 /* GarineldoNo01.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C8A1EA00B3300BC7ED5 /* GarineldoNo01.otf */; };
-		AC871CB71EA00B3300BC7ED5 /* GarineldoNo02.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C8B1EA00B3300BC7ED5 /* GarineldoNo02.otf */; };
-		AC871CB81EA00B3300BC7ED5 /* Kleymissky_0283.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C8C1EA00B3300BC7ED5 /* Kleymissky_0283.otf */; };
-		AC871CB91EA00B3300BC7ED5 /* libertina-co-specimen.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C8D1EA00B3300BC7ED5 /* libertina-co-specimen.pdf */; };
-		AC871CBA1EA00B3300BC7ED5 /* mathilde.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C8E1EA00B3300BC7ED5 /* mathilde.otf */; };
-		AC871CBB1EA00B3300BC7ED5 /* Mechanical.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C8F1EA00B3300BC7ED5 /* Mechanical.otf */; };
-		AC871CBC1EA00B3300BC7ED5 /* MechanicalBd.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C901EA00B3300BC7ED5 /* MechanicalBd.otf */; };
-		AC871CBD1EA00B3300BC7ED5 /* MechanicalBdCond.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C911EA00B3300BC7ED5 /* MechanicalBdCond.otf */; };
-		AC871CBE1EA00B3300BC7ED5 /* MechanicalBdCondObl.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C921EA00B3300BC7ED5 /* MechanicalBdCondObl.otf */; };
-		AC871CBF1EA00B3300BC7ED5 /* MechanicalBdExt.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C931EA00B3300BC7ED5 /* MechanicalBdExt.otf */; };
-		AC871CC01EA00B3300BC7ED5 /* MechanicalBdExtObl.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C941EA00B3300BC7ED5 /* MechanicalBdExtObl.otf */; };
-		AC871CC11EA00B3300BC7ED5 /* MechanicalBdObl.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C951EA00B3300BC7ED5 /* MechanicalBdObl.otf */; };
-		AC871CC21EA00B3300BC7ED5 /* MechanicalBdOut.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C961EA00B3300BC7ED5 /* MechanicalBdOut.otf */; };
-		AC871CC31EA00B3300BC7ED5 /* MechanicalBdOutObl.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C971EA00B3300BC7ED5 /* MechanicalBdOutObl.otf */; };
-		AC871CC41EA00B3300BC7ED5 /* MechanicalCond.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C981EA00B3300BC7ED5 /* MechanicalCond.otf */; };
-		AC871CC51EA00B3300BC7ED5 /* MechanicalCondObl.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C991EA00B3300BC7ED5 /* MechanicalCondObl.otf */; };
-		AC871CC61EA00B3300BC7ED5 /* MechanicalExt.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C9A1EA00B3300BC7ED5 /* MechanicalExt.otf */; };
-		AC871CC71EA00B3300BC7ED5 /* MechanicalExtObl.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C9B1EA00B3300BC7ED5 /* MechanicalExtObl.otf */; };
-		AC871CC81EA00B3300BC7ED5 /* MechanicalObl.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C9C1EA00B3300BC7ED5 /* MechanicalObl.otf */; };
-		AC871CC91EA00B3300BC7ED5 /* MechanicalOut.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C9D1EA00B3300BC7ED5 /* MechanicalOut.otf */; };
-		AC871CCA1EA00B3300BC7ED5 /* MechanicalOutObl.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C9E1EA00B3300BC7ED5 /* MechanicalOutObl.otf */; };
-		AC871CCB1EA00B3300BC7ED5 /* odstemplik.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871C9F1EA00B3300BC7ED5 /* odstemplik.otf */; };
-		AC871CCC1EA00B3300BC7ED5 /* odstemplikBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871CA01EA00B3300BC7ED5 /* odstemplikBold.otf */; };
-		AC871CCD1EA00B3300BC7ED5 /* Risaltyp_024.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871CA11EA00B3300BC7ED5 /* Risaltyp_024.otf */; };
-		AC871CCE1EA00B3300BC7ED5 /* Risaltyp_024.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC871CA21EA00B3300BC7ED5 /* Risaltyp_024.ttf */; };
-		AC871CCF1EA00B3300BC7ED5 /* Wabroye_014.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC871CA31EA00B3300BC7ED5 /* Wabroye_014.otf */; };
-		AC871CD01EA00B3300BC7ED5 /* yerbaluisa_demo-font-FFP.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC871CA41EA00B3300BC7ED5 /* yerbaluisa_demo-font-FFP.ttf */; };
+		ACB0FBED1EA14582002C3CC8 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB0FBEC1EA14582002C3CC8 /* SceneKit.framework */; };
+		ACB0FC5A1EA173FC002C3CC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB0FC591EA173FC002C3CC8 /* Foundation.framework */; };
+		ACB0FC5C1EA17439002C3CC8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB0FC5B1EA17439002C3CC8 /* OpenGLES.framework */; };
 		ACF97AAB1E9E79BA004CD40C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF97AAA1E9E79BA004CD40C /* main.m */; };
 		ACF97AB61E9E79BA004CD40C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF97AB51E9E79BA004CD40C /* Assets.xcassets */; };
 		ACF97AC41E9E79BA004CD40C /* Let_sConnectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF97AC31E9E79BA004CD40C /* Let_sConnectTests.m */; };
@@ -208,6 +174,13 @@
 		AC023B9F1E9EBD8C00E63886 /* LCAvatarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCAvatarViewController.h; path = ViewControllers/Avatar/LCAvatarViewController.h; sourceTree = "<group>"; };
 		AC023BA01E9EBD8C00E63886 /* LCAvatarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCAvatarViewController.m; path = ViewControllers/Avatar/LCAvatarViewController.m; sourceTree = "<group>"; };
 		AC023BA11E9EBD8C00E63886 /* LCAvatarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LCAvatarViewController.xib; path = ViewControllers/Avatar/LCAvatarViewController.xib; sourceTree = "<group>"; };
+		AC0C14391EA193840001CAEE /* lux-skin07-magma-tx-cm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lux-skin07-magma-tx-cm.png"; path = "1/lux-skin07-magma-tx-cm.png"; sourceTree = "<group>"; };
+		AC0C143C1EA193A80001CAEE /* diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = diffuse.png; path = dea/diffuse.png; sourceTree = "<group>"; };
+		AC0C143D1EA193A80001CAEE /* emission.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emission.png; path = dea/emission.png; sourceTree = "<group>"; };
+		AC0C143E1EA193A80001CAEE /* multiply.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = multiply.png; path = dea/multiply.png; sourceTree = "<group>"; };
+		AC0C143F1EA193A80001CAEE /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = normal.png; path = dea/normal.png; sourceTree = "<group>"; };
+		AC0C14401EA193A80001CAEE /* Spaceship.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = Spaceship.dae; path = dea/Spaceship.dae; sourceTree = "<group>"; };
+		AC0C14411EA193A80001CAEE /* specular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = specular.png; path = dea/specular.png; sourceTree = "<group>"; };
 		AC871BAD1E9FC99200BC7ED5 /* Cat_Angry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cat_Angry.png; path = Images/Cat_Angry.png; sourceTree = "<group>"; };
 		AC871BAE1E9FC99200BC7ED5 /* Cat_DoNotDisturb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cat_DoNotDisturb.png; path = Images/Cat_DoNotDisturb.png; sourceTree = "<group>"; };
 		AC871BAF1E9FC99200BC7ED5 /* Cat_Flowers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cat_Flowers.png; path = Images/Cat_Flowers.png; sourceTree = "<group>"; };
@@ -304,50 +277,9 @@
 		AC871C6A1E9FFEC300BC7ED5 /* poker_12139.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = poker_12139.png; path = Images/poker_12139.png; sourceTree = "<group>"; };
 		AC871C6B1E9FFEC300BC7ED5 /* poker_12363.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = poker_12363.png; path = Images/poker_12363.png; sourceTree = "<group>"; };
 		AC871C6C1E9FFEC300BC7ED5 /* poker_56985.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = poker_56985.png; path = Images/poker_56985.png; sourceTree = "<group>"; };
-		AC871C791EA00B3300BC7ED5 /* AppleStormCBo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleStormCBo.otf; path = "FONT-otf/AppleStormCBo.otf"; sourceTree = "<group>"; };
-		AC871C7A1EA00B3300BC7ED5 /* AppleStormCBoIta.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleStormCBoIta.otf; path = "FONT-otf/AppleStormCBoIta.otf"; sourceTree = "<group>"; };
-		AC871C7B1EA00B3300BC7ED5 /* AppleStormIta.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleStormIta.otf; path = "FONT-otf/AppleStormIta.otf"; sourceTree = "<group>"; };
-		AC871C7C1EA00B3300BC7ED5 /* AppleStormRg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleStormRg.otf; path = "FONT-otf/AppleStormRg.otf"; sourceTree = "<group>"; };
-		AC871C7D1EA00B3300BC7ED5 /* AppleStormShdRg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleStormShdRg.otf; path = "FONT-otf/AppleStormShdRg.otf"; sourceTree = "<group>"; };
-		AC871C7E1EA00B3300BC7ED5 /* AppleStormShdRgIta.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleStormShdRgIta.otf; path = "FONT-otf/AppleStormShdRgIta.otf"; sourceTree = "<group>"; };
-		AC871C7F1EA00B3300BC7ED5 /* AppleStormShdXbd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleStormShdXbd.otf; path = "FONT-otf/AppleStormShdXbd.otf"; sourceTree = "<group>"; };
-		AC871C801EA00B3300BC7ED5 /* AppleStormShdXbdIta.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleStormShdXbdIta.otf; path = "FONT-otf/AppleStormShdXbdIta.otf"; sourceTree = "<group>"; };
-		AC871C811EA00B3300BC7ED5 /* AppleStormXbd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleStormXbd.otf; path = "FONT-otf/AppleStormXbd.otf"; sourceTree = "<group>"; };
-		AC871C821EA00B3300BC7ED5 /* AppleStormXbdFax.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleStormXbdFax.otf; path = "FONT-otf/AppleStormXbdFax.otf"; sourceTree = "<group>"; };
-		AC871C831EA00B3300BC7ED5 /* AppleStormXbdFaxIta.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleStormXbdFaxIta.otf; path = "FONT-otf/AppleStormXbdFaxIta.otf"; sourceTree = "<group>"; };
-		AC871C841EA00B3300BC7ED5 /* AppleStormXbdIta.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleStormXbdIta.otf; path = "FONT-otf/AppleStormXbdIta.otf"; sourceTree = "<group>"; };
-		AC871C851EA00B3300BC7ED5 /* AppleStormXbdOut.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleStormXbdOut.otf; path = "FONT-otf/AppleStormXbdOut.otf"; sourceTree = "<group>"; };
-		AC871C861EA00B3300BC7ED5 /* AppleStormXbdOutIta.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppleStormXbdOutIta.otf; path = "FONT-otf/AppleStormXbdOutIta.otf"; sourceTree = "<group>"; };
-		AC871C871EA00B3300BC7ED5 /* BroshK.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BroshK.otf; path = "FONT-otf/BroshK.otf"; sourceTree = "<group>"; };
-		AC871C881EA00B3300BC7ED5 /* BroshK.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BroshK.ttf; path = "FONT-otf/BroshK.ttf"; sourceTree = "<group>"; };
-		AC871C891EA00B3300BC7ED5 /* Garineldo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Garineldo.otf; path = "FONT-otf/Garineldo.otf"; sourceTree = "<group>"; };
-		AC871C8A1EA00B3300BC7ED5 /* GarineldoNo01.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GarineldoNo01.otf; path = "FONT-otf/GarineldoNo01.otf"; sourceTree = "<group>"; };
-		AC871C8B1EA00B3300BC7ED5 /* GarineldoNo02.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GarineldoNo02.otf; path = "FONT-otf/GarineldoNo02.otf"; sourceTree = "<group>"; };
-		AC871C8C1EA00B3300BC7ED5 /* Kleymissky_0283.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Kleymissky_0283.otf; path = "FONT-otf/Kleymissky_0283.otf"; sourceTree = "<group>"; };
-		AC871C8D1EA00B3300BC7ED5 /* libertina-co-specimen.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "libertina-co-specimen.pdf"; path = "FONT-otf/libertina-co-specimen.pdf"; sourceTree = "<group>"; };
-		AC871C8E1EA00B3300BC7ED5 /* mathilde.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = mathilde.otf; path = "FONT-otf/mathilde.otf"; sourceTree = "<group>"; };
-		AC871C8F1EA00B3300BC7ED5 /* Mechanical.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Mechanical.otf; path = "FONT-otf/Mechanical.otf"; sourceTree = "<group>"; };
-		AC871C901EA00B3300BC7ED5 /* MechanicalBd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MechanicalBd.otf; path = "FONT-otf/MechanicalBd.otf"; sourceTree = "<group>"; };
-		AC871C911EA00B3300BC7ED5 /* MechanicalBdCond.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MechanicalBdCond.otf; path = "FONT-otf/MechanicalBdCond.otf"; sourceTree = "<group>"; };
-		AC871C921EA00B3300BC7ED5 /* MechanicalBdCondObl.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MechanicalBdCondObl.otf; path = "FONT-otf/MechanicalBdCondObl.otf"; sourceTree = "<group>"; };
-		AC871C931EA00B3300BC7ED5 /* MechanicalBdExt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MechanicalBdExt.otf; path = "FONT-otf/MechanicalBdExt.otf"; sourceTree = "<group>"; };
-		AC871C941EA00B3300BC7ED5 /* MechanicalBdExtObl.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MechanicalBdExtObl.otf; path = "FONT-otf/MechanicalBdExtObl.otf"; sourceTree = "<group>"; };
-		AC871C951EA00B3300BC7ED5 /* MechanicalBdObl.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MechanicalBdObl.otf; path = "FONT-otf/MechanicalBdObl.otf"; sourceTree = "<group>"; };
-		AC871C961EA00B3300BC7ED5 /* MechanicalBdOut.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MechanicalBdOut.otf; path = "FONT-otf/MechanicalBdOut.otf"; sourceTree = "<group>"; };
-		AC871C971EA00B3300BC7ED5 /* MechanicalBdOutObl.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MechanicalBdOutObl.otf; path = "FONT-otf/MechanicalBdOutObl.otf"; sourceTree = "<group>"; };
-		AC871C981EA00B3300BC7ED5 /* MechanicalCond.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MechanicalCond.otf; path = "FONT-otf/MechanicalCond.otf"; sourceTree = "<group>"; };
-		AC871C991EA00B3300BC7ED5 /* MechanicalCondObl.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MechanicalCondObl.otf; path = "FONT-otf/MechanicalCondObl.otf"; sourceTree = "<group>"; };
-		AC871C9A1EA00B3300BC7ED5 /* MechanicalExt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MechanicalExt.otf; path = "FONT-otf/MechanicalExt.otf"; sourceTree = "<group>"; };
-		AC871C9B1EA00B3300BC7ED5 /* MechanicalExtObl.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MechanicalExtObl.otf; path = "FONT-otf/MechanicalExtObl.otf"; sourceTree = "<group>"; };
-		AC871C9C1EA00B3300BC7ED5 /* MechanicalObl.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MechanicalObl.otf; path = "FONT-otf/MechanicalObl.otf"; sourceTree = "<group>"; };
-		AC871C9D1EA00B3300BC7ED5 /* MechanicalOut.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MechanicalOut.otf; path = "FONT-otf/MechanicalOut.otf"; sourceTree = "<group>"; };
-		AC871C9E1EA00B3300BC7ED5 /* MechanicalOutObl.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MechanicalOutObl.otf; path = "FONT-otf/MechanicalOutObl.otf"; sourceTree = "<group>"; };
-		AC871C9F1EA00B3300BC7ED5 /* odstemplik.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = odstemplik.otf; path = "FONT-otf/odstemplik.otf"; sourceTree = "<group>"; };
-		AC871CA01EA00B3300BC7ED5 /* odstemplikBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = odstemplikBold.otf; path = "FONT-otf/odstemplikBold.otf"; sourceTree = "<group>"; };
-		AC871CA11EA00B3300BC7ED5 /* Risaltyp_024.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Risaltyp_024.otf; path = "FONT-otf/Risaltyp_024.otf"; sourceTree = "<group>"; };
-		AC871CA21EA00B3300BC7ED5 /* Risaltyp_024.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Risaltyp_024.ttf; path = "FONT-otf/Risaltyp_024.ttf"; sourceTree = "<group>"; };
-		AC871CA31EA00B3300BC7ED5 /* Wabroye_014.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Wabroye_014.otf; path = "FONT-otf/Wabroye_014.otf"; sourceTree = "<group>"; };
-		AC871CA41EA00B3300BC7ED5 /* yerbaluisa_demo-font-FFP.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "yerbaluisa_demo-font-FFP.ttf"; path = "FONT-otf/yerbaluisa_demo-font-FFP.ttf"; sourceTree = "<group>"; };
+		ACB0FBEC1EA14582002C3CC8 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		ACB0FC591EA173FC002C3CC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ACB0FC5B1EA17439002C3CC8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		ACF97AA61E9E79BA004CD40C /* Let'sConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Let'sConnect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF97AAA1E9E79BA004CD40C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACF97AB51E9E79BA004CD40C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -378,9 +310,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC871C271E9FDE6C00BC7ED5 /* UIKit.framework in Frameworks */,
-				AC871C251E9FDE6200BC7ED5 /* SystemConfiguration.framework in Frameworks */,
+				ACB0FC5C1EA17439002C3CC8 /* OpenGLES.framework in Frameworks */,
 				AC871C231E9FDE5800BC7ED5 /* QuartzCore.framework in Frameworks */,
+				AC871C131E9FDDE400BC7ED5 /* CoreGraphics.framework in Frameworks */,
+				ACB0FC5A1EA173FC002C3CC8 /* Foundation.framework in Frameworks */,
+				AC871C271E9FDE6C00BC7ED5 /* UIKit.framework in Frameworks */,
+				ACB0FBED1EA14582002C3CC8 /* SceneKit.framework in Frameworks */,
+				AC871C251E9FDE6200BC7ED5 /* SystemConfiguration.framework in Frameworks */,
 				AC871C211E9FDE5000BC7ED5 /* OpenAL.framework in Frameworks */,
 				AC871C1F1E9FDE3F00BC7ED5 /* libz.tbd in Frameworks */,
 				AC871C1D1E9FDE3200BC7ED5 /* libc++.tbd in Frameworks */,
@@ -388,7 +324,6 @@
 				AC871C191E9FDE1000BC7ED5 /* GLKit.framework in Frameworks */,
 				AC871C171E9FDDFC00BC7ED5 /* CoreText.framework in Frameworks */,
 				AC871C151E9FDDF000BC7ED5 /* CoreLocation.framework in Frameworks */,
-				AC871C131E9FDDE400BC7ED5 /* CoreGraphics.framework in Frameworks */,
 				AC871C111E9FDDDB00BC7ED5 /* CoreData.framework in Frameworks */,
 				AC871C0F1E9FDDD200BC7ED5 /* Accelerate.framework in Frameworks */,
 				AC871C051E9FD86D00BC7ED5 /* GoogleMaps.framework in Frameworks */,
@@ -533,6 +468,27 @@
 			name = Avatar;
 			sourceTree = "<group>";
 		};
+		AC0C14281EA1838E0001CAEE /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				AC0C143C1EA193A80001CAEE /* diffuse.png */,
+				AC0C143D1EA193A80001CAEE /* emission.png */,
+				AC0C143E1EA193A80001CAEE /* multiply.png */,
+				AC0C143F1EA193A80001CAEE /* normal.png */,
+				AC0C14401EA193A80001CAEE /* Spaceship.dae */,
+				AC0C14411EA193A80001CAEE /* specular.png */,
+			);
+			name = 1;
+			sourceTree = "<group>";
+		};
+		AC0C14371EA193310001CAEE /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				AC0C14391EA193840001CAEE /* lux-skin07-magma-tx-cm.png */,
+			);
+			name = 2;
+			sourceTree = "<group>";
+		};
 		AC871BF11E9FD18200BC7ED5 /* Custom Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -546,6 +502,9 @@
 		AC871C0D1E9FDDD100BC7ED5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACB0FC5B1EA17439002C3CC8 /* OpenGLES.framework */,
+				ACB0FC591EA173FC002C3CC8 /* Foundation.framework */,
+				ACB0FBEC1EA14582002C3CC8 /* SceneKit.framework */,
 				AC871C261E9FDE6C00BC7ED5 /* UIKit.framework */,
 				AC871C241E9FDE6200BC7ED5 /* SystemConfiguration.framework */,
 				AC871C221E9FDE5800BC7ED5 /* QuartzCore.framework */,
@@ -571,57 +530,6 @@
 				AC871C351E9FE6F300BC7ED5 /* LCGooglePlaceViewController.xib */,
 			);
 			name = "Google Place";
-			sourceTree = "<group>";
-		};
-		AC871C781EA00B0D00BC7ED5 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				AC871C791EA00B3300BC7ED5 /* AppleStormCBo.otf */,
-				AC871C7A1EA00B3300BC7ED5 /* AppleStormCBoIta.otf */,
-				AC871C7B1EA00B3300BC7ED5 /* AppleStormIta.otf */,
-				AC871C7C1EA00B3300BC7ED5 /* AppleStormRg.otf */,
-				AC871C7D1EA00B3300BC7ED5 /* AppleStormShdRg.otf */,
-				AC871C7E1EA00B3300BC7ED5 /* AppleStormShdRgIta.otf */,
-				AC871C7F1EA00B3300BC7ED5 /* AppleStormShdXbd.otf */,
-				AC871C801EA00B3300BC7ED5 /* AppleStormShdXbdIta.otf */,
-				AC871C811EA00B3300BC7ED5 /* AppleStormXbd.otf */,
-				AC871C821EA00B3300BC7ED5 /* AppleStormXbdFax.otf */,
-				AC871C831EA00B3300BC7ED5 /* AppleStormXbdFaxIta.otf */,
-				AC871C841EA00B3300BC7ED5 /* AppleStormXbdIta.otf */,
-				AC871C851EA00B3300BC7ED5 /* AppleStormXbdOut.otf */,
-				AC871C861EA00B3300BC7ED5 /* AppleStormXbdOutIta.otf */,
-				AC871C871EA00B3300BC7ED5 /* BroshK.otf */,
-				AC871C881EA00B3300BC7ED5 /* BroshK.ttf */,
-				AC871C891EA00B3300BC7ED5 /* Garineldo.otf */,
-				AC871C8A1EA00B3300BC7ED5 /* GarineldoNo01.otf */,
-				AC871C8B1EA00B3300BC7ED5 /* GarineldoNo02.otf */,
-				AC871C8C1EA00B3300BC7ED5 /* Kleymissky_0283.otf */,
-				AC871C8D1EA00B3300BC7ED5 /* libertina-co-specimen.pdf */,
-				AC871C8E1EA00B3300BC7ED5 /* mathilde.otf */,
-				AC871C8F1EA00B3300BC7ED5 /* Mechanical.otf */,
-				AC871C901EA00B3300BC7ED5 /* MechanicalBd.otf */,
-				AC871C911EA00B3300BC7ED5 /* MechanicalBdCond.otf */,
-				AC871C921EA00B3300BC7ED5 /* MechanicalBdCondObl.otf */,
-				AC871C931EA00B3300BC7ED5 /* MechanicalBdExt.otf */,
-				AC871C941EA00B3300BC7ED5 /* MechanicalBdExtObl.otf */,
-				AC871C951EA00B3300BC7ED5 /* MechanicalBdObl.otf */,
-				AC871C961EA00B3300BC7ED5 /* MechanicalBdOut.otf */,
-				AC871C971EA00B3300BC7ED5 /* MechanicalBdOutObl.otf */,
-				AC871C981EA00B3300BC7ED5 /* MechanicalCond.otf */,
-				AC871C991EA00B3300BC7ED5 /* MechanicalCondObl.otf */,
-				AC871C9A1EA00B3300BC7ED5 /* MechanicalExt.otf */,
-				AC871C9B1EA00B3300BC7ED5 /* MechanicalExtObl.otf */,
-				AC871C9C1EA00B3300BC7ED5 /* MechanicalObl.otf */,
-				AC871C9D1EA00B3300BC7ED5 /* MechanicalOut.otf */,
-				AC871C9E1EA00B3300BC7ED5 /* MechanicalOutObl.otf */,
-				AC871C9F1EA00B3300BC7ED5 /* odstemplik.otf */,
-				AC871CA01EA00B3300BC7ED5 /* odstemplikBold.otf */,
-				AC871CA11EA00B3300BC7ED5 /* Risaltyp_024.otf */,
-				AC871CA21EA00B3300BC7ED5 /* Risaltyp_024.ttf */,
-				AC871CA31EA00B3300BC7ED5 /* Wabroye_014.otf */,
-				AC871CA41EA00B3300BC7ED5 /* yerbaluisa_demo-font-FFP.ttf */,
-			);
-			name = Font;
 			sourceTree = "<group>";
 		};
 		ACF97A9D1E9E79B9004CD40C = {
@@ -654,7 +562,6 @@
 				ACF97AE51E9E7ACF004CD40C /* BaseViewController */,
 				ACF97AE61E9E7B87004CD40C /* ViewControllers */,
 				AC023B8F1E9EBC7C00E63886 /* Images */,
-				AC871C781EA00B0D00BC7ED5 /* Font */,
 				ACF97AB51E9E79BA004CD40C /* Assets.xcassets */,
 				ACF97ABA1E9E79BA004CD40C /* Info.plist */,
 				ACF97AA91E9E79BA004CD40C /* Supporting Files */,
@@ -710,6 +617,8 @@
 		ACF97AE61E9E7B87004CD40C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AC0C14371EA193310001CAEE /* 2 */,
+				AC0C14281EA1838E0001CAEE /* 1 */,
 				ACF97AE71E9E7B99004CD40C /* SignIn */,
 				AC023B831E9EB5E700E63886 /* MainView */,
 				AC871BF11E9FD18200BC7ED5 /* Custom Font */,
@@ -869,80 +778,55 @@
 			files = (
 				AC871BE41E9FCA8F00BC7ED5 /* Bunny_Eating.png in Resources */,
 				AC871C5E1E9FEFF700BC7ED5 /* Poker_20.png in Resources */,
-				AC871CAB1EA00B3300BC7ED5 /* AppleStormShdXbd.otf in Resources */,
 				AC871C6D1E9FFEC300BC7ED5 /* poker_123.png in Resources */,
 				AC871C611E9FEFF700BC7ED5 /* Poker_25.png in Resources */,
-				AC871CC71EA00B3300BC7ED5 /* MechanicalExtObl.otf in Resources */,
 				AC871C561E9FEFF700BC7ED5 /* Poker_11.png in Resources */,
 				AC023B8E1E9EBABE00E63886 /* LCCollectionViewCell.xib in Resources */,
 				AC871BEC1E9FCA8F00BC7ED5 /* Bunny_Sad.png in Resources */,
-				AC871CC01EA00B3300BC7ED5 /* MechanicalBdExtObl.otf in Resources */,
-				AC871CB31EA00B3300BC7ED5 /* BroshK.otf in Resources */,
-				AC871CAC1EA00B3300BC7ED5 /* AppleStormShdXbdIta.otf in Resources */,
 				AC023B9A1E9EBCBB00E63886 /* Koala_Drink.png in Resources */,
-				AC871CCA1EA00B3300BC7ED5 /* MechanicalOutObl.otf in Resources */,
 				AC871C0A1E9FD86D00BC7ED5 /* GooglePlaces.bundle in Resources */,
-				AC871CA51EA00B3300BC7ED5 /* AppleStormCBo.otf in Resources */,
-				AC871CBF1EA00B3300BC7ED5 /* MechanicalBdExt.otf in Resources */,
 				AC871C721E9FFEC300BC7ED5 /* poker_1478.png in Resources */,
 				AC871C4E1E9FEFF700BC7ED5 /* poker_3.jpg in Resources */,
 				AC871C601E9FEFF700BC7ED5 /* Poker_23.png in Resources */,
 				AC023B9B1E9EBCBB00E63886 /* Koala_Eating.png in Resources */,
 				AC871C741E9FFEC300BC7ED5 /* poker_7879.png in Resources */,
-				AC871CB51EA00B3300BC7ED5 /* Garineldo.otf in Resources */,
 				AC871BCB1E9FC99200BC7ED5 /* Koala_Ouch.png in Resources */,
 				ACF97B041E9E869F004CD40C /* DigitsKitResources.bundle in Resources */,
-				AC871CB81EA00B3300BC7ED5 /* Kleymissky_0283.otf in Resources */,
 				AC871BE51E9FCA8F00BC7ED5 /* Bunny_Furious.png in Resources */,
 				AC871C5B1E9FEFF700BC7ED5 /* Poker_16.png in Resources */,
 				AC871C081E9FD86D00BC7ED5 /* GooglePlacePicker.bundle in Resources */,
-				AC871CA61EA00B3300BC7ED5 /* AppleStormCBoIta.otf in Resources */,
 				AC871BEA1E9FCA8F00BC7ED5 /* Bunny_Love.png in Resources */,
 				AC023B971E9EBCBB00E63886 /* Koala_Angry.png in Resources */,
 				AC871C4F1E9FEFF700BC7ED5 /* poker_4.jpg in Resources */,
 				AC871C581E9FEFF700BC7ED5 /* poker_13.png in Resources */,
-				AC871CA81EA00B3300BC7ED5 /* AppleStormRg.otf in Resources */,
-				AC871CC91EA00B3300BC7ED5 /* MechanicalOut.otf in Resources */,
-				AC871CBA1EA00B3300BC7ED5 /* mathilde.otf in Resources */,
+				AC0C14471EA193A80001CAEE /* specular.png in Resources */,
 				AC871BF61E9FD21C00BC7ED5 /* LCFontCosViewController.xib in Resources */,
-				AC871CAD1EA00B3300BC7ED5 /* AppleStormXbd.otf in Resources */,
 				ACF97AF71E9E84E3004CD40C /* LCLanuchView.xib in Resources */,
 				AC871C771E9FFEC300BC7ED5 /* poker_56985.png in Resources */,
 				AC023B991E9EBCBB00E63886 /* Koala_Crying.png in Resources */,
-				AC871CB21EA00B3300BC7ED5 /* AppleStormXbdOutIta.otf in Resources */,
 				AC023B981E9EBCBB00E63886 /* Koala_CallMe.png in Resources */,
-				AC871CA91EA00B3300BC7ED5 /* AppleStormShdRg.otf in Resources */,
 				AC871BBF1E9FC99200BC7ED5 /* Cat_Angry.png in Resources */,
 				AC871BE31E9FCA8F00BC7ED5 /* Bunny_Crying.png in Resources */,
-				AC871CBE1EA00B3300BC7ED5 /* MechanicalBdCondObl.otf in Resources */,
-				AC871CCC1EA00B3300BC7ED5 /* odstemplikBold.otf in Resources */,
 				AC871BC91E9FC99200BC7ED5 /* Koala_Laughing.png in Resources */,
 				AC871BC51E9FC99200BC7ED5 /* Cat_Oops.png in Resources */,
-				AC871CC11EA00B3300BC7ED5 /* MechanicalBdObl.otf in Resources */,
 				AC871C041E9FD86D00BC7ED5 /* GoogleMaps.bundle in Resources */,
 				AC871BC11E9FC99200BC7ED5 /* Cat_Flowers.png in Resources */,
 				AC871C5C1E9FEFF700BC7ED5 /* Poker_17.png in Resources */,
 				AC871BCD1E9FC99200BC7ED5 /* Koala_Sleeping.png in Resources */,
 				AC871C531E9FEFF700BC7ED5 /* poker_8.jpg in Resources */,
-				AC871CB01EA00B3300BC7ED5 /* AppleStormXbdIta.otf in Resources */,
 				AC871C521E9FEFF700BC7ED5 /* Poker_7.png in Resources */,
-				AC871CAA1EA00B3300BC7ED5 /* AppleStormShdRgIta.otf in Resources */,
 				AC871C761E9FFEC300BC7ED5 /* poker_12363.png in Resources */,
-				AC871CAE1EA00B3300BC7ED5 /* AppleStormXbdFax.otf in Resources */,
-				AC871CD01EA00B3300BC7ED5 /* yerbaluisa_demo-font-FFP.ttf in Resources */,
-				AC871CBB1EA00B3300BC7ED5 /* Mechanical.otf in Resources */,
+				AC0C14461EA193A80001CAEE /* Spaceship.dae in Resources */,
 				AC871C4D1E9FEFF700BC7ED5 /* poker_2 copy.jpg in Resources */,
-				AC871CBC1EA00B3300BC7ED5 /* MechanicalBd.otf in Resources */,
+				AC0C143B1EA193840001CAEE /* lux-skin07-magma-tx-cm.png in Resources */,
 				AC871C711E9FFEC300BC7ED5 /* poker_1459.png in Resources */,
 				ACF97AFD1E9E8559004CD40C /* LCSignInViewController.xib in Resources */,
 				AC871BCE1E9FC99200BC7ED5 /* Koala_ThumbsUp.png in Resources */,
 				AC871C6F1E9FFEC300BC7ED5 /* poker_1235.png in Resources */,
 				AC871C6E1E9FFEC300BC7ED5 /* poker_456.png in Resources */,
-				AC871CCD1EA00B3300BC7ED5 /* Risaltyp_024.otf in Resources */,
 				AC871BE71E9FCA8F00BC7ED5 /* Bunny_HappyBday.png in Resources */,
 				AC871C5A1E9FEFF700BC7ED5 /* Poker_15.png in Resources */,
 				AC871C5F1E9FEFF700BC7ED5 /* Poker_22.png in Resources */,
-				AC871CCF1EA00B3300BC7ED5 /* Wabroye_014.otf in Resources */,
 				AC871C751E9FFEC300BC7ED5 /* poker_12139.png in Resources */,
 				AC871C591E9FEFF700BC7ED5 /* Poker_14.png in Resources */,
 				AC871BEB1E9FCA8F00BC7ED5 /* Bunny_Party.png in Resources */,
@@ -950,42 +834,31 @@
 				AC023B881E9EB62B00E63886 /* LCMainViewController.xib in Resources */,
 				AC871BCC1E9FC99200BC7ED5 /* Koala_Sick.png in Resources */,
 				AC871C371E9FE6F300BC7ED5 /* LCGooglePlaceViewController.xib in Resources */,
-				AC871CB41EA00B3300BC7ED5 /* BroshK.ttf in Resources */,
+				AC0C14451EA193A80001CAEE /* normal.png in Resources */,
+				AC0C14431EA193A80001CAEE /* emission.png in Resources */,
+				AC0C14441EA193A80001CAEE /* multiply.png in Resources */,
 				AC871BEE1E9FCA8F00BC7ED5 /* Bunny_Sleeping.png in Resources */,
 				AC023B9D1E9EBCBB00E63886 /* Koala_Help.png in Resources */,
 				AC871BC21E9FC99200BC7ED5 /* Cat_Hey.png in Resources */,
 				AC871BCF1E9FC99200BC7ED5 /* Koala_TTYL.png in Resources */,
 				AC871BF01E9FCA8F00BC7ED5 /* Bunny_Yay.png in Resources */,
-				AC871CC41EA00B3300BC7ED5 /* MechanicalCond.otf in Resources */,
-				AC871CB91EA00B3300BC7ED5 /* libertina-co-specimen.pdf in Resources */,
-				AC871CCE1EA00B3300BC7ED5 /* Risaltyp_024.ttf in Resources */,
+				AC0C14421EA193A80001CAEE /* diffuse.png in Resources */,
 				AC871C551E9FEFF700BC7ED5 /* Poker_10.png in Resources */,
-				AC871CB61EA00B3300BC7ED5 /* GarineldoNo01.otf in Resources */,
-				AC871CC61EA00B3300BC7ED5 /* MechanicalExt.otf in Resources */,
 				AC871C5D1E9FEFF700BC7ED5 /* Poker_19.png in Resources */,
-				AC871CB11EA00B3300BC7ED5 /* AppleStormXbdOut.otf in Resources */,
 				AC871BC71E9FC99200BC7ED5 /* Cat_Undecided.png in Resources */,
 				AC871BC61E9FC99200BC7ED5 /* Cat_Picnic.png in Resources */,
 				ACF97AB61E9E79BA004CD40C /* Assets.xcassets in Resources */,
 				AC871C511E9FEFF700BC7ED5 /* poker_6.jpg in Resources */,
-				AC871CC31EA00B3300BC7ED5 /* MechanicalBdOutObl.otf in Resources */,
 				AC871BD01E9FC99200BC7ED5 /* Koala_What.png in Resources */,
 				AC871C571E9FEFF700BC7ED5 /* poker_12.png in Resources */,
 				AC871BE11E9FCA8F00BC7ED5 /* Bunny_Baby.png in Resources */,
 				AC871BC41E9FC99200BC7ED5 /* Cat_Love.png in Resources */,
-				AC871CC51EA00B3300BC7ED5 /* MechanicalCondObl.otf in Resources */,
 				AC871BC31E9FC99200BC7ED5 /* Cat_Kiss.png in Resources */,
-				AC871CBD1EA00B3300BC7ED5 /* MechanicalBdCond.otf in Resources */,
 				AC871BE21E9FCA8F00BC7ED5 /* Bunny_Cleaning.png in Resources */,
 				AC871BCA1E9FC99200BC7ED5 /* Koala_MissYou.png in Resources */,
 				AC023BA31E9EBD8C00E63886 /* LCAvatarViewController.xib in Resources */,
-				AC871CB71EA00B3300BC7ED5 /* GarineldoNo02.otf in Resources */,
-				AC871CC21EA00B3300BC7ED5 /* MechanicalBdOut.otf in Resources */,
 				AC871C701E9FFEC300BC7ED5 /* poker_1236.png in Resources */,
-				AC871CCB1EA00B3300BC7ED5 /* odstemplik.otf in Resources */,
 				AC871BE81E9FCA8F00BC7ED5 /* Bunny_HappyEaster.png in Resources */,
-				AC871CAF1EA00B3300BC7ED5 /* AppleStormXbdFaxIta.otf in Resources */,
-				AC871CA71EA00B3300BC7ED5 /* AppleStormIta.otf in Resources */,
 				AC871BEF1E9FCA8F00BC7ED5 /* Bunny_TTYL.png in Resources */,
 				AC023B9C1E9EBCBB00E63886 /* Koala_HappyBDay.png in Resources */,
 				AC871BC01E9FC99200BC7ED5 /* Cat_DoNotDisturb.png in Resources */,
@@ -993,7 +866,6 @@
 				AC871C541E9FEFF700BC7ED5 /* poker_9.png in Resources */,
 				AC871BC81E9FC99200BC7ED5 /* Cat_Waiting.png in Resources */,
 				AC871C501E9FEFF700BC7ED5 /* poker_5.jpg in Resources */,
-				AC871CC81EA00B3300BC7ED5 /* MechanicalObl.otf in Resources */,
 				AC871BE61E9FCA8F00BC7ED5 /* Bunny_GoodLuck.png in Resources */,
 				AC871BE91E9FCA8F00BC7ED5 /* Bunny_Laughing.png in Resources */,
 				AC871C731E9FFEC300BC7ED5 /* poker_1548.png in Resources */,

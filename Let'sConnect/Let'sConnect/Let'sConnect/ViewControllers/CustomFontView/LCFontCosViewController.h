@@ -7,9 +7,12 @@
 //
 
 #import "LCBaseViewController.h"
+@import SceneKit;
+
 
 @interface LCFontCosViewController : LCBaseViewController
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) NSString *imageNameString;
 @property (nonatomic, strong) IBOutlet UICollectionView *ibCollecationView;
+@property (weak) IBOutlet SCNView *sceneView;
 @end

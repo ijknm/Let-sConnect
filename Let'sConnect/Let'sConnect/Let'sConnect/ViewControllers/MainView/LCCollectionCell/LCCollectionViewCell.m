@@ -7,14 +7,18 @@
 //
 
 #import "LCCollectionViewCell.h"
+@import SceneKit;
 
 @implementation LCCollectionViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
     self.contentView.backgroundColor = [UIColor clearColor];
     [self.contentView addSubview:_ibImageView];
+    // Initialization code
+
+//    myView.backgroundColor = [UIColor lightGrayColor];
+
 }
 
 
