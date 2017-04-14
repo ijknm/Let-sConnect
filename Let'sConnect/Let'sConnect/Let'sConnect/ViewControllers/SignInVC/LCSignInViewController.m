@@ -18,6 +18,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    Digits *digits = [Digits sharedInstance];
+    DGTAuthenticationConfiguration *configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsDefaultOptionMask];
+    
+    DGTAppearance *digitsAppearance = [[DGTAppearance alloc] init];
+    digitsAppearance.accentColor = [UIColor greenColor];
+    digitsAppearance.headerFont = [UIFont fontWithName:@"HelveticaNeue" size:18];
+    digitsAppearance.labelFont = [UIFont fontWithName:@"HelveticaNeue" size:16];
+    digitsAppearance.bodyFont = [UIFont fontWithName:@"HelveticaNeue" size:16];
+    [digitsAppearance applyUIAppearanceColors];
+    
+    configuration.appearance = digitsAppearance;
+    
+    
+    [digits authenticateWithViewController:nil configuration:configuration completion:^(DGTSession *session, NSError *error) {
+        if (session != NULL) {
+            
+            NSString* digitAuthId = [NSString stringWithFormat:@"%@%@%@%@",@"token=", session.authToken, @",secret=", session.authTokenSecret];
+            NSString* phoneNumber = session.phoneNumber;
+            NSLog(@"%@,%@",digitAuthId,phoneNumber);
+            [self moveMainViewController];
+        }else if (error != NULL) {
+            NSLog(@"#ERROR : %@", error.description);
+        }
+    }];
+}
+-(void)moveMainViewController{
+        LCMainViewController *mainVC = [[LCMainViewController alloc]init];
+        [self.navigationController pushViewController:mainVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

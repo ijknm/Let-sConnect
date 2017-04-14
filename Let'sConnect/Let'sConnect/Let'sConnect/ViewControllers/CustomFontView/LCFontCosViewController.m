@@ -9,8 +9,8 @@
 #import "LCFontCosViewController.h"
 #import "LCGooglePlaceViewController.h"
 #import "LCCollectionViewCell.h"
-@import GooglePlacePicker;
-@import GooglePlaces;
+//@import GooglePlacePicker;
+//@import GooglePlaces;
 
 
 @interface LCFontCosViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
@@ -18,8 +18,8 @@
 @end
 
 @implementation LCFontCosViewController{
-    GMSPlacePicker *_placePicker;
-    GMSPlacesClient *_placesClient;
+//    GMSPlacePicker *_placePicker;
+//    GMSPlacesClient *_placesClient;
     NSMutableArray *fontArray;
 }
 
@@ -74,29 +74,28 @@
 }
 
 -(IBAction)didTapGooleMapPlace:(id)sender{
-    
-    CLLocationCoordinate2D center = CLLocationCoordinate2DMake(37.788204, -122.411937);
-    CLLocationCoordinate2D northEast = CLLocationCoordinate2DMake(center.latitude + 0.001,
-                                                                  center.longitude + 0.001);
-    CLLocationCoordinate2D southWest = CLLocationCoordinate2DMake(center.latitude - 0.001,
-                                                                  center.longitude - 0.001);
-    GMSCoordinateBounds *viewport = [[GMSCoordinateBounds alloc] initWithCoordinate:northEast
-                                                                         coordinate:southWest];
-    GMSPlacePickerConfig *config = [[GMSPlacePickerConfig alloc] initWithViewport:viewport];
-    _placePicker = [[GMSPlacePicker alloc] initWithConfig:config];
-    
-    [_placePicker pickPlaceWithCallback:^(GMSPlace *place, NSError *error) {
-        if (error != nil) {
-            NSLog(@"Pick Place error %@", [error localizedDescription]);
-            return;
-        }
-        if (place != nil) {
-                LCGooglePlaceViewController *googlePlace = [[LCGooglePlaceViewController alloc]init];
-                [self.navigationController pushViewController:googlePlace animated:YES];
-        } else {
-            
-        }
-    }];
+//    CLLocationCoordinate2D center = CLLocationCoordinate2DMake(37.788204, -122.411937);
+//    CLLocationCoordinate2D northEast = CLLocationCoordinate2DMake(center.latitude + 0.001,
+//                                                                  center.longitude + 0.001);
+//    CLLocationCoordinate2D southWest = CLLocationCoordinate2DMake(center.latitude - 0.001,
+//                                                                  center.longitude - 0.001);
+//    GMSCoordinateBounds *viewport = [[GMSCoordinateBounds alloc] initWithCoordinate:northEast
+//                                                                         coordinate:southWest];
+//    GMSPlacePickerConfig *config = [[GMSPlacePickerConfig alloc] initWithViewport:viewport];
+//    _placePicker = [[GMSPlacePicker alloc] initWithConfig:config];
+//    
+//    [_placePicker pickPlaceWithCallback:^(GMSPlace *place, NSError *error) {
+//        if (error != nil) {
+//            NSLog(@"Pick Place error %@", [error localizedDescription]);
+//            return;
+//        }
+//        if (place != nil) {
+//                LCGooglePlaceViewController *googlePlace = [[LCGooglePlaceViewController alloc]init];
+//                [self.navigationController pushViewController:googlePlace animated:YES];
+//        } else {
+//            
+//        }
+//    }];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

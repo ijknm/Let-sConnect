@@ -9,8 +9,8 @@
 #import "LCAppDelegate.h"
 #import "LCSignInViewController.h"
 #import "LCMainViewController.h"
-@import GooglePlaces;
-@import GoogleMaps;
+//@import GooglePlaces;
+//@import GoogleMaps;
 
 @interface LCAppDelegate ()
 
@@ -21,8 +21,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [GMSPlacesClient provideAPIKey:@"AIzaSyCosSWUu9Ckf0HHKDkMyo8TTsrJ-2iXlag"];
-    [GMSServices provideAPIKey:@"AIzaSyCosSWUu9Ckf0HHKDkMyo8TTsrJ-2iXlag"];
+//    [GMSPlacesClient provideAPIKey:@"AIzaSyCosSWUu9Ckf0HHKDkMyo8TTsrJ-2iXlag"];
+//    [GMSServices provideAPIKey:@"AIzaSyCosSWUu9Ckf0HHKDkMyo8TTsrJ-2iXlag"];
     
     [Fabric with:@[[Digits class]]];
     [self loginFabric];
@@ -32,41 +32,14 @@
     return YES;
 }
 -(void)loginFabric{
-    Digits *digits = [Digits sharedInstance];
-    DGTAuthenticationConfiguration *configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsDefaultOptionMask];
-    
-    DGTAppearance *digitsAppearance = [[DGTAppearance alloc] init];
-    digitsAppearance.accentColor = [UIColor greenColor];
-    digitsAppearance.headerFont = [UIFont fontWithName:@"HelveticaNeue" size:18];
-    digitsAppearance.labelFont = [UIFont fontWithName:@"HelveticaNeue" size:16];
-    digitsAppearance.bodyFont = [UIFont fontWithName:@"HelveticaNeue" size:16];
-    [digitsAppearance applyUIAppearanceColors];
-    
-    configuration.appearance = digitsAppearance;
-    
-    
-    [digits authenticateWithViewController:nil configuration:configuration completion:^(DGTSession *session, NSError *error) {
-        if (session != NULL) {
-            
-            NSString* digitAuthId = [NSString stringWithFormat:@"%@%@%@%@",@"token=", session.authToken, @",secret=", session.authTokenSecret];
-            NSString* phoneNumber = session.phoneNumber;
-            NSLog(@"%@,%@",digitAuthId,phoneNumber);
-            [self moveMainViewController];
-          
-            
-        }else if (error != NULL) {
-            NSLog(@"#ERROR : %@", error.description);
-        }
-    }];
-
+    [self moveMainViewController];
 }
 -(void)moveMainViewController{
-//    LCMainViewController *mainVC = [[LCMainViewController alloc]init];
-//    [self.navigationController pushViewController:mainVC animated:YES];
+
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    LCMainViewController *signInVC = [[LCMainViewController alloc] initWithNibName:@"LCMainViewController" bundle:nil];
+    LCSignInViewController *signInVC = [[LCSignInViewController alloc] initWithNibName:@"LCSignInViewController" bundle:nil];
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:signInVC];
     self.window.rootViewController = navVC;
     self.window.backgroundColor = [UIColor whiteColor];
