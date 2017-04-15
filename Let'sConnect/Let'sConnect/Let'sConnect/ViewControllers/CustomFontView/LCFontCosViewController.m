@@ -21,6 +21,7 @@
 //    GMSPlacePicker *_placePicker;
 //    GMSPlacesClient *_placesClient;
     NSMutableArray *fontArray;
+    BOOL isSlecated;
 }
 
 
@@ -29,30 +30,74 @@
     [super viewDidLoad];
     _imageView.image = [UIImage imageNamed:_imageNameString];
     // Do any additional setup after loading the view from its nib.
-    self.ibCollecationView.delegate = self;
-    self.ibCollecationView.dataSource = self;
-    [self.ibCollecationView registerNib:[UINib nibWithNibName:@"LCCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"Cell"];
-    self.ibCollecationView.backgroundColor = [UIColor clearColor];
+    [self setUpCollecationView];
     
-    
- 
         _sceneView.scene = [SCNScene sceneNamed:@"Spaceship.dae"];
         _sceneView.allowsCameraControl = YES;
         _sceneView.autoenablesDefaultLighting = YES;
     
-
-//    fontArray = [[NSMutableArray alloc]init];
-//    for (NSString* family in [UIFont familyNames]){
-//        [fontArray addObject:family];
-//    }
-    fontArray = [[NSMutableArray alloc]init];
-    NSString *bundleRootPath = [[NSBundle mainBundle] bundlePath];
-    NSArray *bundleRootContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:bundleRootPath error:nil];
-    NSArray *files = [bundleRootContents filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self beginswith 'Koala' OR self beginswith 'Cat' OR self beginswith 'Bunny'"]];
-    fontArray = [files mutableCopy];
-
-    [_ibCollecationView reloadData];
+        [self changeColor:[UIColor purpleColor]];
+  
+    
+    _redBUtton.backgroundColor = [UIColor redColor];
+    _blueColor.backgroundColor = [UIColor blueColor];
+    _blackColor.backgroundColor = [UIColor blackColor];
+    _greenColor.backgroundColor = [UIColor greenColor];
+    _lightGrayColor.backgroundColor = [UIColor lightGrayColor];
 }
+
+-(IBAction)didTapRedColor:(id)sender{
+     [self changeColor:[UIColor redColor]];
+}
+-(IBAction)didTapOnBlackColor:(id)sender{
+      [self changeColor:[UIColor blackColor]];
+}
+-(IBAction)didTapgreenColor:(id)sender{
+    [self changeColor:[UIColor greenColor]];
+}
+-(IBAction)didTapOnlightGrayColor:(id)sender{
+      [self changeColor:[UIColor lightGrayColor]];
+}
+-(IBAction)didTapblueColor:(id)sender{
+    [self changeColor:[UIColor blueColor]];
+}
+
+
+-(void)changeColor:(UIColor *)color{
+    if (isSlecated) {
+        SCNNode *node = self.sceneView.scene.rootNode;
+        NSArray *nodes = [node childNodes];
+        
+        SCNNode *colornode = [nodes objectAtIndex:0];
+        SCNMaterial *matical = [colornode.geometry.materials objectAtIndex:1];
+        matical.diffuse.contents = color;
+        
+        SCNNode *colornode2 = [nodes objectAtIndex:1];
+        SCNMaterial *matical2 = [colornode2.geometry.materials objectAtIndex:1];
+        matical2.diffuse.contents = [UIColor greenColor];
+    }
+   
+    
+//    for (SCNNode *node in nodes){
+//        SCNMaterial *matical = [node.geometry.materials objectAtIndex:1];
+//        matical.diffuse.contents = color;
+//    }
+}
+
+-(IBAction)diSelect3DImageChane:(id)sender{
+    isSlecated = NO;
+    _sceneView.scene = [SCNScene sceneNamed:@"Body Basemesh1.dae"];
+    _sceneView.allowsCameraControl = YES;
+    _sceneView.autoenablesDefaultLighting = YES;
+
+}
+
+
+
+
+
+
+
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
 }
@@ -103,6 +148,20 @@
 //            
 //        }
 //    }];
+}
+-(void)setUpCollecationView{
+    self.ibCollecationView.delegate = self;
+    self.ibCollecationView.dataSource = self;
+    [self.ibCollecationView registerNib:[UINib nibWithNibName:@"LCCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"Cell"];
+    self.ibCollecationView.backgroundColor = [UIColor clearColor];
+    fontArray = [[NSMutableArray alloc]init];
+    NSString *bundleRootPath = [[NSBundle mainBundle] bundlePath];
+    NSArray *bundleRootContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:bundleRootPath error:nil];
+    NSArray *files = [bundleRootContents filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self beginswith 'Koala' OR self beginswith 'Cat' OR self beginswith 'Bunny'"]];
+    fontArray = [files mutableCopy];
+    
+    [_ibCollecationView reloadData];
+    isSlecated = YES;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

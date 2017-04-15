@@ -20,13 +20,15 @@
 		AC023B9D1E9EBCBB00E63886 /* Koala_Help.png in Resources */ = {isa = PBXBuildFile; fileRef = AC023B961E9EBCBB00E63886 /* Koala_Help.png */; };
 		AC023BA21E9EBD8C00E63886 /* LCAvatarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC023BA01E9EBD8C00E63886 /* LCAvatarViewController.m */; };
 		AC023BA31E9EBD8C00E63886 /* LCAvatarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC023BA11E9EBD8C00E63886 /* LCAvatarViewController.xib */; };
-		AC0C143B1EA193840001CAEE /* lux-skin07-magma-tx-cm.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0C14391EA193840001CAEE /* lux-skin07-magma-tx-cm.png */; };
-		AC0C14421EA193A80001CAEE /* diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0C143C1EA193A80001CAEE /* diffuse.png */; };
-		AC0C14431EA193A80001CAEE /* emission.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0C143D1EA193A80001CAEE /* emission.png */; };
-		AC0C14441EA193A80001CAEE /* multiply.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0C143E1EA193A80001CAEE /* multiply.png */; };
-		AC0C14451EA193A80001CAEE /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0C143F1EA193A80001CAEE /* normal.png */; };
-		AC0C14461EA193A80001CAEE /* Spaceship.dae in Resources */ = {isa = PBXBuildFile; fileRef = AC0C14401EA193A80001CAEE /* Spaceship.dae */; };
-		AC0C14471EA193A80001CAEE /* specular.png in Resources */ = {isa = PBXBuildFile; fileRef = AC0C14411EA193A80001CAEE /* specular.png */; };
+		AC0C14581EA2A5EC0001CAEE /* Body Basemesh.dae in Resources */ = {isa = PBXBuildFile; fileRef = AC0C14571EA2A5EC0001CAEE /* Body Basemesh.dae */; };
+		AC5B81A91EA2AEB6000DDB8D /* Body Basemesh1.dae in Resources */ = {isa = PBXBuildFile; fileRef = AC5B81A81EA2AEB6000DDB8D /* Body Basemesh1.dae */; };
+		AC5B81AD1EA2BB34000DDB8D /* SceneKit Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = AC5B81AC1EA2BB33000DDB8D /* SceneKit Scene.scn */; };
+		AC5B81B61EA2C242000DDB8D /* grid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC5B81B01EA2C242000DDB8D /* grid.jpg */; };
+		AC5B81B71EA2C242000DDB8D /* lux-skin07-magma-tx-cm.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5B81B11EA2C242000DDB8D /* lux-skin07-magma-tx-cm.png */; };
+		AC5B81B81EA2C242000DDB8D /* multiply.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5B81B21EA2C242000DDB8D /* multiply.png */; };
+		AC5B81B91EA2C242000DDB8D /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5B81B31EA2C242000DDB8D /* normal.png */; };
+		AC5B81BA1EA2C242000DDB8D /* Spaceship.dae in Resources */ = {isa = PBXBuildFile; fileRef = AC5B81B41EA2C242000DDB8D /* Spaceship.dae */; };
+		AC5B81BB1EA2C242000DDB8D /* specular.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5B81B51EA2C242000DDB8D /* specular.png */; };
 		AC871BBF1E9FC99200BC7ED5 /* Cat_Angry.png in Resources */ = {isa = PBXBuildFile; fileRef = AC871BAD1E9FC99200BC7ED5 /* Cat_Angry.png */; };
 		AC871BC01E9FC99200BC7ED5 /* Cat_DoNotDisturb.png in Resources */ = {isa = PBXBuildFile; fileRef = AC871BAE1E9FC99200BC7ED5 /* Cat_DoNotDisturb.png */; };
 		AC871BC11E9FC99200BC7ED5 /* Cat_Flowers.png in Resources */ = {isa = PBXBuildFile; fileRef = AC871BAF1E9FC99200BC7ED5 /* Cat_Flowers.png */; };
@@ -174,13 +176,16 @@
 		AC023B9F1E9EBD8C00E63886 /* LCAvatarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCAvatarViewController.h; path = ViewControllers/Avatar/LCAvatarViewController.h; sourceTree = "<group>"; };
 		AC023BA01E9EBD8C00E63886 /* LCAvatarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCAvatarViewController.m; path = ViewControllers/Avatar/LCAvatarViewController.m; sourceTree = "<group>"; };
 		AC023BA11E9EBD8C00E63886 /* LCAvatarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LCAvatarViewController.xib; path = ViewControllers/Avatar/LCAvatarViewController.xib; sourceTree = "<group>"; };
-		AC0C14391EA193840001CAEE /* lux-skin07-magma-tx-cm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lux-skin07-magma-tx-cm.png"; path = "1/lux-skin07-magma-tx-cm.png"; sourceTree = "<group>"; };
-		AC0C143C1EA193A80001CAEE /* diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = diffuse.png; path = dea/diffuse.png; sourceTree = "<group>"; };
-		AC0C143D1EA193A80001CAEE /* emission.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emission.png; path = dea/emission.png; sourceTree = "<group>"; };
-		AC0C143E1EA193A80001CAEE /* multiply.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = multiply.png; path = dea/multiply.png; sourceTree = "<group>"; };
-		AC0C143F1EA193A80001CAEE /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = normal.png; path = dea/normal.png; sourceTree = "<group>"; };
-		AC0C14401EA193A80001CAEE /* Spaceship.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = Spaceship.dae; path = dea/Spaceship.dae; sourceTree = "<group>"; };
-		AC0C14411EA193A80001CAEE /* specular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = specular.png; path = dea/specular.png; sourceTree = "<group>"; };
+		AC0C14571EA2A5EC0001CAEE /* Body Basemesh.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "Body Basemesh.dae"; path = "1/Body Basemesh.dae"; sourceTree = "<group>"; };
+		AC5B81A81EA2AEB6000DDB8D /* Body Basemesh1.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "Body Basemesh1.dae"; path = "1/Body Basemesh1.dae"; sourceTree = "<group>"; };
+		AC5B81AC1EA2BB33000DDB8D /* SceneKit Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "SceneKit Scene.scn"; path = "scane ki/SceneKit Scene.scn"; sourceTree = "<group>"; };
+		AC5B81AE1EA2BC61000DDB8D /* BodyBasemesh4.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = BodyBasemesh4.scn; path = 1/BodyBasemesh4.scn; sourceTree = "<group>"; };
+		AC5B81B01EA2C242000DDB8D /* grid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = grid.jpg; path = 1/nodes/grid.jpg; sourceTree = "<group>"; };
+		AC5B81B11EA2C242000DDB8D /* lux-skin07-magma-tx-cm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lux-skin07-magma-tx-cm.png"; path = "1/nodes/lux-skin07-magma-tx-cm.png"; sourceTree = "<group>"; };
+		AC5B81B21EA2C242000DDB8D /* multiply.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = multiply.png; path = 1/nodes/multiply.png; sourceTree = "<group>"; };
+		AC5B81B31EA2C242000DDB8D /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = normal.png; path = 1/nodes/normal.png; sourceTree = "<group>"; };
+		AC5B81B41EA2C242000DDB8D /* Spaceship.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = Spaceship.dae; path = 1/nodes/Spaceship.dae; sourceTree = "<group>"; };
+		AC5B81B51EA2C242000DDB8D /* specular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = specular.png; path = 1/nodes/specular.png; sourceTree = "<group>"; };
 		AC871BAD1E9FC99200BC7ED5 /* Cat_Angry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cat_Angry.png; path = Images/Cat_Angry.png; sourceTree = "<group>"; };
 		AC871BAE1E9FC99200BC7ED5 /* Cat_DoNotDisturb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cat_DoNotDisturb.png; path = Images/Cat_DoNotDisturb.png; sourceTree = "<group>"; };
 		AC871BAF1E9FC99200BC7ED5 /* Cat_Flowers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cat_Flowers.png; path = Images/Cat_Flowers.png; sourceTree = "<group>"; };
@@ -468,25 +473,28 @@
 			name = Avatar;
 			sourceTree = "<group>";
 		};
-		AC0C14281EA1838E0001CAEE /* 1 */ = {
+		AC0C14561EA2A5B90001CAEE /* 3d model */ = {
 			isa = PBXGroup;
 			children = (
-				AC0C143C1EA193A80001CAEE /* diffuse.png */,
-				AC0C143D1EA193A80001CAEE /* emission.png */,
-				AC0C143E1EA193A80001CAEE /* multiply.png */,
-				AC0C143F1EA193A80001CAEE /* normal.png */,
-				AC0C14401EA193A80001CAEE /* Spaceship.dae */,
-				AC0C14411EA193A80001CAEE /* specular.png */,
+				AC5B81AF1EA2C229000DDB8D /* nodes */,
+				AC5B81AE1EA2BC61000DDB8D /* BodyBasemesh4.scn */,
+				AC5B81A81EA2AEB6000DDB8D /* Body Basemesh1.dae */,
+				AC0C14571EA2A5EC0001CAEE /* Body Basemesh.dae */,
 			);
-			name = 1;
+			name = "3d model";
 			sourceTree = "<group>";
 		};
-		AC0C14371EA193310001CAEE /* 2 */ = {
+		AC5B81AF1EA2C229000DDB8D /* nodes */ = {
 			isa = PBXGroup;
 			children = (
-				AC0C14391EA193840001CAEE /* lux-skin07-magma-tx-cm.png */,
+				AC5B81B01EA2C242000DDB8D /* grid.jpg */,
+				AC5B81B11EA2C242000DDB8D /* lux-skin07-magma-tx-cm.png */,
+				AC5B81B21EA2C242000DDB8D /* multiply.png */,
+				AC5B81B31EA2C242000DDB8D /* normal.png */,
+				AC5B81B41EA2C242000DDB8D /* Spaceship.dae */,
+				AC5B81B51EA2C242000DDB8D /* specular.png */,
 			);
-			name = 2;
+			name = nodes;
 			sourceTree = "<group>";
 		};
 		AC871BF11E9FD18200BC7ED5 /* Custom Font */ = {
@@ -535,6 +543,7 @@
 		ACF97A9D1E9E79B9004CD40C = {
 			isa = PBXGroup;
 			children = (
+				AC5B81AC1EA2BB33000DDB8D /* SceneKit Scene.scn */,
 				ACF97AA81E9E79BA004CD40C /* Let'sConnect */,
 				ACF97AFE1E9E864D004CD40C /* Framework */,
 				ACF97AC21E9E79BA004CD40C /* Let'sConnectTests */,
@@ -617,8 +626,7 @@
 		ACF97AE61E9E7B87004CD40C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AC0C14371EA193310001CAEE /* 2 */,
-				AC0C14281EA1838E0001CAEE /* 1 */,
+				AC0C14561EA2A5B90001CAEE /* 3d model */,
 				ACF97AE71E9E7B99004CD40C /* SignIn */,
 				AC023B831E9EB5E700E63886 /* MainView */,
 				AC871BF11E9FD18200BC7ED5 /* Custom Font */,
@@ -791,6 +799,7 @@
 				AC023B9B1E9EBCBB00E63886 /* Koala_Eating.png in Resources */,
 				AC871C741E9FFEC300BC7ED5 /* poker_7879.png in Resources */,
 				AC871BCB1E9FC99200BC7ED5 /* Koala_Ouch.png in Resources */,
+				AC5B81B91EA2C242000DDB8D /* normal.png in Resources */,
 				ACF97B041E9E869F004CD40C /* DigitsKitResources.bundle in Resources */,
 				AC871BE51E9FCA8F00BC7ED5 /* Bunny_Furious.png in Resources */,
 				AC871C5B1E9FEFF700BC7ED5 /* Poker_16.png in Resources */,
@@ -799,14 +808,17 @@
 				AC023B971E9EBCBB00E63886 /* Koala_Angry.png in Resources */,
 				AC871C4F1E9FEFF700BC7ED5 /* poker_4.jpg in Resources */,
 				AC871C581E9FEFF700BC7ED5 /* poker_13.png in Resources */,
-				AC0C14471EA193A80001CAEE /* specular.png in Resources */,
+				AC5B81B81EA2C242000DDB8D /* multiply.png in Resources */,
 				AC871BF61E9FD21C00BC7ED5 /* LCFontCosViewController.xib in Resources */,
 				ACF97AF71E9E84E3004CD40C /* LCLanuchView.xib in Resources */,
 				AC871C771E9FFEC300BC7ED5 /* poker_56985.png in Resources */,
+				AC5B81AD1EA2BB34000DDB8D /* SceneKit Scene.scn in Resources */,
 				AC023B991E9EBCBB00E63886 /* Koala_Crying.png in Resources */,
+				AC5B81B71EA2C242000DDB8D /* lux-skin07-magma-tx-cm.png in Resources */,
 				AC023B981E9EBCBB00E63886 /* Koala_CallMe.png in Resources */,
 				AC871BBF1E9FC99200BC7ED5 /* Cat_Angry.png in Resources */,
 				AC871BE31E9FCA8F00BC7ED5 /* Bunny_Crying.png in Resources */,
+				AC5B81B61EA2C242000DDB8D /* grid.jpg in Resources */,
 				AC871BC91E9FC99200BC7ED5 /* Koala_Laughing.png in Resources */,
 				AC871BC51E9FC99200BC7ED5 /* Cat_Oops.png in Resources */,
 				AC871C041E9FD86D00BC7ED5 /* GoogleMaps.bundle in Resources */,
@@ -815,11 +827,11 @@
 				AC871BCD1E9FC99200BC7ED5 /* Koala_Sleeping.png in Resources */,
 				AC871C531E9FEFF700BC7ED5 /* poker_8.jpg in Resources */,
 				AC871C521E9FEFF700BC7ED5 /* Poker_7.png in Resources */,
+				AC5B81BA1EA2C242000DDB8D /* Spaceship.dae in Resources */,
 				AC871C761E9FFEC300BC7ED5 /* poker_12363.png in Resources */,
-				AC0C14461EA193A80001CAEE /* Spaceship.dae in Resources */,
 				AC871C4D1E9FEFF700BC7ED5 /* poker_2 copy.jpg in Resources */,
-				AC0C143B1EA193840001CAEE /* lux-skin07-magma-tx-cm.png in Resources */,
 				AC871C711E9FFEC300BC7ED5 /* poker_1459.png in Resources */,
+				AC5B81A91EA2AEB6000DDB8D /* Body Basemesh1.dae in Resources */,
 				ACF97AFD1E9E8559004CD40C /* LCSignInViewController.xib in Resources */,
 				AC871BCE1E9FC99200BC7ED5 /* Koala_ThumbsUp.png in Resources */,
 				AC871C6F1E9FFEC300BC7ED5 /* poker_1235.png in Resources */,
@@ -829,20 +841,17 @@
 				AC871C5F1E9FEFF700BC7ED5 /* Poker_22.png in Resources */,
 				AC871C751E9FFEC300BC7ED5 /* poker_12139.png in Resources */,
 				AC871C591E9FEFF700BC7ED5 /* Poker_14.png in Resources */,
+				AC5B81BB1EA2C242000DDB8D /* specular.png in Resources */,
 				AC871BEB1E9FCA8F00BC7ED5 /* Bunny_Party.png in Resources */,
 				ACF97AE41E9E7AC6004CD40C /* LCBaseViewController.xib in Resources */,
 				AC023B881E9EB62B00E63886 /* LCMainViewController.xib in Resources */,
 				AC871BCC1E9FC99200BC7ED5 /* Koala_Sick.png in Resources */,
 				AC871C371E9FE6F300BC7ED5 /* LCGooglePlaceViewController.xib in Resources */,
-				AC0C14451EA193A80001CAEE /* normal.png in Resources */,
-				AC0C14431EA193A80001CAEE /* emission.png in Resources */,
-				AC0C14441EA193A80001CAEE /* multiply.png in Resources */,
 				AC871BEE1E9FCA8F00BC7ED5 /* Bunny_Sleeping.png in Resources */,
 				AC023B9D1E9EBCBB00E63886 /* Koala_Help.png in Resources */,
 				AC871BC21E9FC99200BC7ED5 /* Cat_Hey.png in Resources */,
 				AC871BCF1E9FC99200BC7ED5 /* Koala_TTYL.png in Resources */,
 				AC871BF01E9FCA8F00BC7ED5 /* Bunny_Yay.png in Resources */,
-				AC0C14421EA193A80001CAEE /* diffuse.png in Resources */,
 				AC871C551E9FEFF700BC7ED5 /* Poker_10.png in Resources */,
 				AC871C5D1E9FEFF700BC7ED5 /* Poker_19.png in Resources */,
 				AC871BC71E9FC99200BC7ED5 /* Cat_Undecided.png in Resources */,
@@ -869,6 +878,7 @@
 				AC871BE61E9FCA8F00BC7ED5 /* Bunny_GoodLuck.png in Resources */,
 				AC871BE91E9FCA8F00BC7ED5 /* Bunny_Laughing.png in Resources */,
 				AC871C731E9FFEC300BC7ED5 /* poker_1548.png in Resources */,
+				AC0C14581EA2A5EC0001CAEE /* Body Basemesh.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

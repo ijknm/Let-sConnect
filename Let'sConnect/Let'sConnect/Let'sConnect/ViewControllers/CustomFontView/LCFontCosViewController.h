@@ -15,4 +15,12 @@
 @property (nonatomic, strong) NSString *imageNameString;
 @property (nonatomic, strong) IBOutlet UICollectionView *ibCollecationView;
 @property (weak) IBOutlet SCNView *sceneView;
+
+
+@property (nonatomic, strong) IBOutlet UIButton *redBUtton;
+@property (nonatomic, strong) IBOutlet UIButton *blueColor;
+@property (nonatomic, strong) IBOutlet UIButton *blackColor;
+@property (nonatomic, strong) IBOutlet UIButton *greenColor;
+@property (nonatomic, strong) IBOutlet UIButton *lightGrayColor;
+
 @end
