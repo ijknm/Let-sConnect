@@ -12,13 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LCFontCosViewController">
             <connections>
-                <outlet property="blackColor" destination="yx9-lt-3Zf" id="Ubd-Hn-ss9"/>
-                <outlet property="blueColor" destination="eTe-Ga-nn6" id="6rl-DV-sPa"/>
-                <outlet property="greenColor" destination="RtD-GW-cuP" id="uWc-5p-SD5"/>
                 <outlet property="ibCollecationView" destination="Uw6-ZN-KtR" id="3q7-Xp-4SE"/>
                 <outlet property="imageView" destination="R64-Jl-LHu" id="TNJ-og-aGd"/>
-                <outlet property="lightGrayColor" destination="CiP-uD-EWd" id="wWh-Bk-59a"/>
-                <outlet property="redBUtton" destination="5X3-tl-gIf" id="849-0z-oLD"/>
                 <outlet property="sceneView" destination="zig-L2-OVO" id="s7c-L0-6Z9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="0Y0-It-zjy"/>
             </connections>
@@ -72,52 +67,20 @@
                             <color key="textColor" red="0.1763561015" green="1" blue="0.3880812938" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yx9-lt-3Zf">
-                            <rect key="frame" x="94" y="7" width="46" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.67347275579999999" green="0.0" blue="0.92698981749999998" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="didTapOnBlackColor:" destination="-1" eventType="touchUpInside" id="xVW-QW-x3M"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTe-Ga-nn6">
-                            <rect key="frame" x="147" y="7" width="46" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.67347275579999999" green="0.0" blue="0.92698981749999998" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="didTapblueColor:" destination="-1" eventType="touchUpInside" id="8gC-nV-708"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtD-GW-cuP">
-                            <rect key="frame" x="201" y="7" width="46" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.67347275579999999" green="0.0" blue="0.92698981749999998" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="didTapgreenColor:" destination="-1" eventType="touchUpInside" id="sNg-7D-oAk"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiP-uD-EWd">
-                            <rect key="frame" x="256" y="7" width="46" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.67347275579999999" green="0.0" blue="0.92698981749999998" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="didTapOnlightGrayColor:" destination="-1" eventType="touchUpInside" id="R9a-dy-A1a"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X3-tl-gIf">
-                            <rect key="frame" x="315" y="7" width="46" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.67347275579999999" green="0.0" blue="0.92698981749999998" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="didTapRedColor:" destination="-1" eventType="touchUpInside" id="xOq-cA-zEf"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRa-F8-A2a">
                             <rect key="frame" x="8" y="-5" width="78" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Human"/>
                             <connections>
                                 <action selector="diSelect3DImageChane:" destination="-1" eventType="touchUpInside" id="RWA-dp-fSv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyV-ey-sUk">
+                            <rect key="frame" x="206" y="5" width="161" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Add to google map"/>
+                            <connections>
+                                <action selector="didTapGooleMapPlace:" destination="-1" eventType="touchUpInside" id="9xH-SD-J3F"/>
                             </connections>
                         </button>
                     </subviews>

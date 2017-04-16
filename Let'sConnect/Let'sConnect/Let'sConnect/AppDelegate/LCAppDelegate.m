@@ -9,8 +9,8 @@
 #import "LCAppDelegate.h"
 #import "LCSignInViewController.h"
 #import "LCMainViewController.h"
-//@import GooglePlaces;
-//@import GoogleMaps;
+@import GooglePlaces;
+@import GoogleMaps;
 
 @interface LCAppDelegate ()
 
@@ -21,8 +21,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//    [GMSPlacesClient provideAPIKey:@"AIzaSyCosSWUu9Ckf0HHKDkMyo8TTsrJ-2iXlag"];
-//    [GMSServices provideAPIKey:@"AIzaSyCosSWUu9Ckf0HHKDkMyo8TTsrJ-2iXlag"];
+    [GMSPlacesClient provideAPIKey:@"AIzaSyCosSWUu9Ckf0HHKDkMyo8TTsrJ-2iXlag"];
+    [GMSServices provideAPIKey:@"AIzaSyCosSWUu9Ckf0HHKDkMyo8TTsrJ-2iXlag"];
     
     [Fabric with:@[[Digits class]]];
     [self loginFabric];
