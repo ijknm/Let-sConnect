@@ -9,6 +9,8 @@
 #import "LCSignInViewController.h"
 #import <DigitsKit/DigitsKit.h>
 #import "LCMainViewController.h"
+#import "LCFontCosViewController.h"
+#import "LCAppDelegate.h"
 
 @interface LCSignInViewController ()
 
@@ -19,6 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     Digits *digits = [Digits sharedInstance];
+    
+    [self.navigationController.navigationBar setBackgroundColor:[UIColor clearColor]];
+ 
+
     DGTAuthenticationConfiguration *configuration = [[DGTAuthenticationConfiguration alloc] initWithAccountFields:DGTAccountFieldsDefaultOptionMask];
     
     DGTAppearance *digitsAppearance = [[DGTAppearance alloc] init];
@@ -27,27 +33,33 @@
     digitsAppearance.labelFont = [UIFont fontWithName:@"HelveticaNeue" size:16];
     digitsAppearance.bodyFont = [UIFont fontWithName:@"HelveticaNeue" size:16];
     [digitsAppearance applyUIAppearanceColors];
-    
     configuration.appearance = digitsAppearance;
     
     
-    [digits authenticateWithViewController:nil configuration:configuration completion:^(DGTSession *session, NSError *error) {
+    [digits authenticateWithViewController:self configuration:configuration completion:^(DGTSession *session, NSError *error) {
         if (session != NULL) {
-            
+           self.labeltext.text = @"";
             NSString* digitAuthId = [NSString stringWithFormat:@"%@%@%@%@",@"token=", session.authToken, @",secret=", session.authTokenSecret];
             NSString* phoneNumber = session.phoneNumber;
             NSLog(@"%@,%@",digitAuthId,phoneNumber);
             [self moveMainViewController];
         }else if (error != NULL) {
+             self.labeltext.text = @"";
             NSLog(@"#ERROR : %@", error.description);
         }
     }];
 }
 -(void)moveMainViewController{
+    dispatch_async(dispatch_get_main_queue(), ^{
         LCMainViewController *mainVC = [[LCMainViewController alloc]init];
         [self.navigationController pushViewController:mainVC animated:YES];
+    });
 }
-
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:YES];
+    [self.navigationController.navigationBar setBackgroundColor:[UIColor whiteColor]];
+ 
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

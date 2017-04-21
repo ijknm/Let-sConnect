@@ -5,22 +5,16 @@
 //  Created by praveen on 4/13/17.
 //  Copyright © 2017 com.Connect. All rights reserved.
 //
-
+#import <UIKit/UIKit.h>
 #import "LCBaseViewController.h"
+#import "DemoMessagesViewController.h"
 @import SceneKit;
 
 
-@interface LCFontCosViewController : LCBaseViewController
+@interface LCFontCosViewController : UIViewController
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) NSString *imageNameString;
 @property (nonatomic, strong) IBOutlet UICollectionView *ibCollecationView;
-@property (weak) IBOutlet SCNView *sceneView;
 
-
-@property (nonatomic, strong) IBOutlet UIButton *redBUtton;
-@property (nonatomic, strong) IBOutlet UIButton *blueColor;
-@property (nonatomic, strong) IBOutlet UIButton *blackColor;
-@property (nonatomic, strong) IBOutlet UIButton *greenColor;
-@property (nonatomic, strong) IBOutlet UIButton *lightGrayColor;
 
 @end

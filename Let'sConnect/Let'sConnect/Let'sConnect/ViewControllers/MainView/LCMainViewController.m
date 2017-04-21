@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self loadImages];
     self.ibCollecationView.delegate = self;
     self.ibCollecationView.dataSource = self;
@@ -73,6 +74,17 @@
     self.images = [files mutableCopy];
     [self.ibCollecationView reloadData];
 }
+-(IBAction)didTapOnMaleTapped:(id)sender{
+    LCFontCosViewController *fontVC = [[LCFontCosViewController alloc]init];
+    fontVC.imageNameString = @"poker_6.jpg";
+    [self.navigationController pushViewController:fontVC animated:YES];
+}
+-(IBAction)didTapOnFemaleTapped:(id)sender{
+    LCFontCosViewController *fontVC = [[LCFontCosViewController alloc]init];
+    fontVC.imageNameString = @"poker_1548.png";
+    [self.navigationController pushViewController:fontVC animated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

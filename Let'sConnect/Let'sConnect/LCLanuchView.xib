@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -10,7 +14,29 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot.png" translatesAutoresizingMaskIntoConstraints="NO" id="4zl-zr-xLR">
+                    <rect key="frame" x="0.0" y="111" width="375" height="445"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecating..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qk-Td-nMh">
+                    <rect key="frame" x="120" y="610" width="134.5" height="24"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                    <color key="textColor" red="0.18823529410000001" green="0.54901960780000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4zl-zr-xLR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="XTH-s7-Zi6"/>
+                <constraint firstAttribute="bottom" secondItem="5qk-Td-nMh" secondAttribute="bottom" constant="33" id="aRV-G2-K9y"/>
+                <constraint firstAttribute="trailing" secondItem="4zl-zr-xLR" secondAttribute="trailing" id="bGj-yR-FTo"/>
+                <constraint firstItem="4zl-zr-xLR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dH7-Hr-QVd"/>
+                <constraint firstItem="4zl-zr-xLR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iSW-t7-i9y"/>
+                <constraint firstItem="5qk-Td-nMh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zL9-IY-1RY"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="Screen Shot.png" width="386" height="445"/>
+    </resources>
 </document>

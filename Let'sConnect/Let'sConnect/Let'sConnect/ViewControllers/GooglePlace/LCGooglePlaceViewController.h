@@ -7,7 +7,11 @@
 //
 
 #import "LCBaseViewController.h"
+#import "DemoMessagesViewController.h"
 
 @interface LCGooglePlaceViewController : LCBaseViewController
+
+@property (nonatomic, strong) NSString *imageNameString;
+@property (nonatomic, strong) IBOutlet UIView *ibMapView;
 
 @end

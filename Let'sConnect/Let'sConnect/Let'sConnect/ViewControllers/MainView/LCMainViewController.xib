@@ -60,21 +60,104 @@
                         <action selector="DidTapOnSecondTypeOfImages:" destination="-1" eventType="touchUpInside" id="KCf-lT-tt5"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZW-W6-68H">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D47-ik-ylT">
+                            <rect key="frame" x="0.0" y="8" width="375" height="329.5"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poker_1548.png" translatesAutoresizingMaskIntoConstraints="NO" id="F2S-dB-ZC4">
+                                    <rect key="frame" x="83" y="43" width="210" height="245"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ej3-jj-8CE">
+                                    <rect key="frame" x="155.5" y="280" width="64.5" height="23"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                                    <color key="textColor" red="0.84705882352941175" green="0.1803921568627451" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4Z-gE-U2N">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="330"/>
+                                    <connections>
+                                        <action selector="didTapOnFemaleTapped:" destination="-1" eventType="touchUpInside" id="0pN-G1-46H"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="n4Z-gE-U2N" secondAttribute="bottom" id="2f9-Du-ont"/>
+                                <constraint firstItem="ej3-jj-8CE" firstAttribute="top" secondItem="F2S-dB-ZC4" secondAttribute="bottom" constant="-8" id="IN5-c5-Ynz"/>
+                                <constraint firstItem="n4Z-gE-U2N" firstAttribute="leading" secondItem="D47-ik-ylT" secondAttribute="leading" id="IjD-eP-qGH"/>
+                                <constraint firstItem="n4Z-gE-U2N" firstAttribute="top" secondItem="D47-ik-ylT" secondAttribute="top" id="NRQ-Qn-xR4"/>
+                                <constraint firstItem="F2S-dB-ZC4" firstAttribute="centerY" secondItem="D47-ik-ylT" secondAttribute="centerY" id="Uv0-cK-SfI"/>
+                                <constraint firstItem="F2S-dB-ZC4" firstAttribute="centerX" secondItem="D47-ik-ylT" secondAttribute="centerX" id="WVc-5d-vC9"/>
+                                <constraint firstItem="ej3-jj-8CE" firstAttribute="centerX" secondItem="F2S-dB-ZC4" secondAttribute="centerX" id="rGz-xS-Vb6"/>
+                                <constraint firstAttribute="trailing" secondItem="n4Z-gE-U2N" secondAttribute="trailing" id="xoD-Ew-Z6F"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFf-Mg-cu2">
+                            <rect key="frame" x="0.0" y="337.5" width="375" height="329.5"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poker_6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vKO-o6-Qrc">
+                                    <rect key="frame" x="55" y="8.5" width="265" height="314"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joz-Zg-ZvK">
+                                    <rect key="frame" x="166.5" y="291" width="43" height="23"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                                    <color key="textColor" red="0.0078431372549019607" green="0.0078431372549019607" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQJ-ox-uYi">
+                                    <rect key="frame" x="8" y="0.0" width="367" height="330"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="didTapOnMaleTapped:" destination="-1" eventType="touchUpInside" id="6OZ-Eq-xWB"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="vKO-o6-Qrc" firstAttribute="centerX" secondItem="dFf-Mg-cu2" secondAttribute="centerX" id="MsG-Y9-G66"/>
+                                <constraint firstItem="joz-Zg-ZvK" firstAttribute="centerX" secondItem="vKO-o6-Qrc" secondAttribute="centerX" id="OzA-HJ-PHC"/>
+                                <constraint firstItem="joz-Zg-ZvK" firstAttribute="top" secondItem="vKO-o6-Qrc" secondAttribute="bottom" constant="-31.5" id="lqG-jh-3Vs"/>
+                                <constraint firstItem="vKO-o6-Qrc" firstAttribute="centerY" secondItem="dFf-Mg-cu2" secondAttribute="centerY" id="uaR-rk-M38"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="dFf-Mg-cu2" firstAttribute="leading" secondItem="HZW-W6-68H" secondAttribute="leading" id="69n-w4-4uc"/>
+                        <constraint firstItem="dFf-Mg-cu2" firstAttribute="top" secondItem="D47-ik-ylT" secondAttribute="bottom" id="A3u-an-i2m"/>
+                        <constraint firstAttribute="trailing" secondItem="dFf-Mg-cu2" secondAttribute="trailing" id="AFp-p6-7zk"/>
+                        <constraint firstItem="D47-ik-ylT" firstAttribute="leading" secondItem="HZW-W6-68H" secondAttribute="leading" id="Cio-dU-VHj"/>
+                        <constraint firstAttribute="bottom" secondItem="dFf-Mg-cu2" secondAttribute="bottom" id="Vs8-2T-OJA"/>
+                        <constraint firstAttribute="trailing" secondItem="D47-ik-ylT" secondAttribute="trailing" id="gp6-a7-9tJ"/>
+                        <constraint firstItem="D47-ik-ylT" firstAttribute="top" secondItem="HZW-W6-68H" secondAttribute="top" constant="8" id="m4Z-hC-IV5"/>
+                        <constraint firstItem="D47-ik-ylT" firstAttribute="height" secondItem="dFf-Mg-cu2" secondAttribute="height" id="uXn-VJ-gx8"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.18823529410000001" green="0.54901960780000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="2LG-dG-OiJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="15l-MD-ruj"/>
                 <constraint firstItem="LGx-aL-l39" firstAttribute="top" secondItem="2LG-dG-OiJ" secondAttribute="bottom" id="5XR-XK-BM5"/>
+                <constraint firstAttribute="bottom" secondItem="HZW-W6-68H" secondAttribute="bottom" id="FWe-Gw-mwB"/>
                 <constraint firstAttribute="bottom" secondItem="LGx-aL-l39" secondAttribute="bottom" id="J9l-3i-8oK"/>
                 <constraint firstItem="X6d-P8-7HU" firstAttribute="leading" secondItem="LGx-aL-l39" secondAttribute="trailing" constant="2" id="Ppl-4o-7lz"/>
+                <constraint firstItem="HZW-W6-68H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Sg9-bH-ETV"/>
                 <constraint firstItem="LGx-aL-l39" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bKE-SN-z3g"/>
                 <constraint firstAttribute="bottom" secondItem="X6d-P8-7HU" secondAttribute="bottom" id="gDh-Te-lyD"/>
                 <constraint firstAttribute="trailing" secondItem="X6d-P8-7HU" secondAttribute="trailing" id="nmN-0k-F6j"/>
                 <constraint firstAttribute="trailing" secondItem="2LG-dG-OiJ" secondAttribute="trailing" id="rIq-Im-4fC"/>
                 <constraint firstItem="2LG-dG-OiJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rzN-Hw-Mzg"/>
                 <constraint firstItem="LGx-aL-l39" firstAttribute="width" secondItem="X6d-P8-7HU" secondAttribute="width" id="sNg-d8-Kh9"/>
+                <constraint firstItem="HZW-W6-68H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="urQ-Zg-aoO"/>
+                <constraint firstAttribute="trailing" secondItem="HZW-W6-68H" secondAttribute="trailing" id="vDm-Ku-B8Z"/>
             </constraints>
             <point key="canvasLocation" x="32.5" y="126.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="poker_1548.png" width="210" height="245"/>
+        <image name="poker_6.jpg" width="265" height="314"/>
+    </resources>
 </document>

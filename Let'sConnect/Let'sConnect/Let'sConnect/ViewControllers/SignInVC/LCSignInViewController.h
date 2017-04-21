@@ -9,5 +9,6 @@
 #import "LCBaseViewController.h"
 
 @interface LCSignInViewController : LCBaseViewController
+@property (nonatomic, strong) IBOutlet UILabel *labeltext;
 
 @end

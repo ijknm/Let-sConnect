@@ -11,14 +11,50 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LCGooglePlaceViewController">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="ibMapView" destination="Qe2-YB-oco" id="dcc-8E-KhY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="ZdV-jr-0UK"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qe2-YB-oco">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwI-Yb-HX6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need's come Real Avatar from user created This is simple image added and when user select avar he able chart with then" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHw-EF-9PC">
+                            <rect key="frame" x="52" y="272.5" width="271" height="122"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="271" id="Ddw-3X-0zT"/>
+                                <constraint firstAttribute="height" constant="122" id="LBJ-Aq-uZG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="MHw-EF-9PC" firstAttribute="centerY" secondItem="gwI-Yb-HX6" secondAttribute="centerY" id="qh2-3u-4Yz"/>
+                        <constraint firstItem="MHw-EF-9PC" firstAttribute="centerX" secondItem="gwI-Yb-HX6" secondAttribute="centerX" id="sU5-PM-6fV"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Qe2-YB-oco" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8fF-X2-XaI"/>
+                <constraint firstItem="Qe2-YB-oco" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E3q-67-40l"/>
+                <constraint firstItem="gwI-Yb-HX6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="L3e-Ie-fUo"/>
+                <constraint firstAttribute="bottom" secondItem="gwI-Yb-HX6" secondAttribute="bottom" id="Lo1-er-Lu2"/>
+                <constraint firstAttribute="trailing" secondItem="gwI-Yb-HX6" secondAttribute="trailing" id="NqI-cu-O7d"/>
+                <constraint firstItem="gwI-Yb-HX6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Oik-5H-F9d"/>
+                <constraint firstAttribute="bottom" secondItem="Qe2-YB-oco" secondAttribute="bottom" id="dbe-P0-S54"/>
+                <constraint firstAttribute="trailing" secondItem="Qe2-YB-oco" secondAttribute="trailing" id="iP5-Fz-USy"/>
+            </constraints>
             <point key="canvasLocation" x="32.5" y="72.5"/>
         </view>
     </objects>

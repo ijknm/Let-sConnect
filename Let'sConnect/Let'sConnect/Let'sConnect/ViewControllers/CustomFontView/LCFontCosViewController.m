@@ -9,6 +9,13 @@
 #import "LCFontCosViewController.h"
 #import "LCGooglePlaceViewController.h"
 #import "LCCollectionViewCell.h"
+#import <GLKit/GLKit.h>
+#import "GLView.h"
+
+
+#define DEGREES_TO_RADIANS(x) (3.14159265358979323846 * x / 180.0)
+#define RANDOM_FLOAT_BETWEEN(x, y) (((float) rand() / RAND_MAX) * (y - x) + x)
+
 @import GooglePlacePicker;
 @import GooglePlaces;
 
@@ -24,80 +31,14 @@
     BOOL isSlecated;
 }
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     _imageView.image = [UIImage imageNamed:_imageNameString];
-    // Do any additional setup after loading the view from its nib.
     [self setUpCollecationView];
+ 
     
-        _sceneView.scene = [SCNScene sceneNamed:@"Spaceship.dae"];
-        _sceneView.allowsCameraControl = YES;
-        _sceneView.autoenablesDefaultLighting = YES;
-    
-        [self changeColor:[UIColor purpleColor]];
-  
-    
-    _redBUtton.backgroundColor = [UIColor redColor];
-    _blueColor.backgroundColor = [UIColor blueColor];
-    _blackColor.backgroundColor = [UIColor blackColor];
-    _greenColor.backgroundColor = [UIColor greenColor];
-    _lightGrayColor.backgroundColor = [UIColor lightGrayColor];
-}
-
--(IBAction)didTapRedColor:(id)sender{
-     [self changeColor:[UIColor redColor]];
-}
--(IBAction)didTapOnBlackColor:(id)sender{
-      [self changeColor:[UIColor blackColor]];
-}
--(IBAction)didTapgreenColor:(id)sender{
-    [self changeColor:[UIColor greenColor]];
-}
--(IBAction)didTapOnlightGrayColor:(id)sender{
-      [self changeColor:[UIColor lightGrayColor]];
-}
--(IBAction)didTapblueColor:(id)sender{
-    [self changeColor:[UIColor blueColor]];
-}
-
-
--(void)changeColor:(UIColor *)color{
-    if (isSlecated) {
-        SCNNode *node = self.sceneView.scene.rootNode;
-        NSArray *nodes = [node childNodes];
-        
-        SCNNode *colornode = [nodes objectAtIndex:0];
-        SCNMaterial *matical = [colornode.geometry.materials objectAtIndex:1];
-        matical.diffuse.contents = color;
-        
-        SCNNode *colornode2 = [nodes objectAtIndex:1];
-        SCNMaterial *matical2 = [colornode2.geometry.materials objectAtIndex:1];
-        matical2.diffuse.contents = [UIColor greenColor];
-    }
-   
-    
-//    for (SCNNode *node in nodes){
-//        SCNMaterial *matical = [node.geometry.materials objectAtIndex:1];
-//        matical.diffuse.contents = color;
-//    }
-}
-
--(IBAction)diSelect3DImageChane:(id)sender{
-    isSlecated = NO;
-    _sceneView.scene = [SCNScene sceneNamed:@"Body Basemesh1.dae"];
-    _sceneView.allowsCameraControl = YES;
-    _sceneView.autoenablesDefaultLighting = YES;
 
 }
-
-
-
-
-
-
-
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
 }
@@ -114,12 +55,6 @@
     cell.layer.cornerRadius = 6;
     cell.contentView.backgroundColor = [UIColor clearColor];
     cell.ibImageView.image =[UIImage imageNamed:[fontArray objectAtIndex:indexPath.row]];
-    
-    //    cell.ibImageView.backgroundColor = [UIColor clearColor];
-//    UILabel *label = [[UILabel alloc]initWithFrame:cell.frame];
-//    label.text = @"Content";
-//    label.font = [UIFont fontWithName:[fontArray objectAtIndex:indexPath.row] size:20];
-//    [cell.ibImageView addSubview:label];
     
     return cell;
 
@@ -143,6 +78,7 @@
         }
         if (place != nil) {
                 LCGooglePlaceViewController *googlePlace = [[LCGooglePlaceViewController alloc]init];
+                googlePlace.imageNameString = _imageNameString;
                 [self.navigationController pushViewController:googlePlace animated:YES];
         } else {
             
@@ -163,6 +99,13 @@
     [_ibCollecationView reloadData];
     isSlecated = YES;
 }
+ 
+-(IBAction)message:(id)sender{
+    DemoMessagesViewController *vc = [DemoMessagesViewController messagesViewController];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
